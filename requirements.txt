@@ -1,0 +1,10 @@
+flask
+osmnx
+networkx
+geopandas
+folium
+numpy
+pandas
+matplotlib
+scikit-learn
+shapely

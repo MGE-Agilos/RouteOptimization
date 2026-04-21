@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OLLN · Optimisation routière</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- ── Top bar ─────────────────────────────────────────────── -->
+<div id="topbar">
+  <div class="logo">OLLN <span>Traffic</span></div>
+  <div style="font-size:12px;color:var(--text-muted);margin-left:4px">
+    Ottignies-Louvain-la-Neuve · Simulation panneaux routiers
+  </div>
+  <div class="sep"></div>
+  <button class="btn btn-ghost" id="btn-reset">↺ Réinitialiser</button>
+  <button class="btn btn-primary" id="btn-simulate" disabled>▶ Simuler</button>
+</div>
+
+<!-- ── Main ────────────────────────────────────────────────── -->
+<div id="main">
+
+  <!-- Left sidebar -->
+  <div id="sidebar">
+
+    <!-- Current stats -->
+    <div class="sidebar-section">
+      <h3>Trafic actuel</h3>
+      <div class="stats-grid">
+        <div class="stat-box red">
+          <div class="label">Critique</div>
+          <div class="value" id="stat-critique">–</div>
+          <div class="sub">segments ≥ 65</div>
+        </div>
+        <div class="stat-box orange">
+          <div class="label">Élevé</div>
+          <div class="value" id="stat-eleve">–</div>
+          <div class="sub">segments ≥ 40</div>
+        </div>
+        <div class="stat-box yellow">
+          <div class="label">Modéré</div>
+          <div class="value" id="stat-modere">–</div>
+          <div class="sub">segments ≥ 20</div>
+        </div>
+        <div class="stat-box green">
+          <div class="label">Faible</div>
+          <div class="value" id="stat-faible">–</div>
+          <div class="sub">segments &lt; 20</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison (visible after simulation) -->
+    <div class="sidebar-section" id="compare-section" style="display:none">
+      <h3>Avant / Après simulation</h3>
+      <div id="compare-rows"></div>
+    </div>
+
+    <!-- Applied signs list -->
+    <div class="sidebar-section" style="padding-bottom:8px">
+      <h3>Panneaux appliqués</h3>
+    </div>
+    <div id="signs-list">
+      <div class="empty-state">
+        <div class="icon">🗺️</div>
+        Cliquez sur une route pour y poser un panneau.
+      </div>
+    </div>
+
+    <!-- Simulate button at bottom -->
+    <div id="simulate-bar">
+      <button class="btn btn-success" id="btn-simulate-bottom" onclick="simulate()" disabled>
+        ▶ Lancer la simulation
+      </button>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map-container">
+    <div id="map"></div>
+
+    <!-- View mode selector (shown after simulation) -->
+    <div id="view-modes">
+      <button class="vm-btn active" data-mode="current">Base</button>
+      <button class="vm-btn" data-mode="simulated">Simulé</button>
+      <button class="vm-btn" data-mode="diff">Différence</button>
+    </div>
+
+    <!-- Legend -->
+    <div id="legend">
+      <h4 id="legend-title">Score de trafic</h4>
+      <div class="legend-row">
+        <div class="legend-color crit"></div>
+        <span>Critique (≥ 65)</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-color high"></div>
+        <span>Élevé (≥ 40)</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-color med"></div>
+        <span>Modéré (≥ 20)</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-color low"></div>
+        <span>Faible (&lt; 20)</span>
+      </div>
+      <div class="legend-row" id="legend-closed" style="display:none">
+        <div class="legend-color closed"></div>
+        <span>Route fermée</span>
+      </div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);
+                  font-size:10px;color:var(--text-muted)" id="model-info">
+        Modèle OD · <span id="poi-count">…</span> POI OSM
+      </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p id="loading-msg">Chargement…</p>
+    </div>
+  </div>
+
+</div><!-- #main -->
+
+<!-- ── Right panel: sign selector ──────────────────────────── -->
+<div id="sign-panel">
+  <div id="sign-panel-header">
+    <div class="road-info">
+      <div class="road-name" id="sp-road-name">Rue sans nom</div>
+      <div class="road-meta" id="sp-road-meta">–</div>
+    </div>
+    <button id="sign-panel-close" title="Fermer">×</button>
+  </div>
+
+  <div style="padding:8px 16px;border-bottom:1px solid var(--border);
+              font-size:12px;color:var(--text-muted)" id="sp-vehicles"></div>
+
+  <div class="road-score-bar">
+    <div class="score-label">Score de trafic</div>
+    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px">
+      <div class="score-big" id="sp-score-big">0</div>
+      <div style="font-size:13px;font-weight:600" id="sp-score-cat">–</div>
+    </div>
+    <div class="score-track">
+      <div class="score-fill" id="sp-score-fill" style="width:0%"></div>
+    </div>
+    <div class="score-nums"><span>0</span><span>50</span><span>100</span></div>
+  </div>
+
+  <div id="sign-types">
+    <h4>Choisissez un panneau</h4>
+    <div id="sign-types-list"></div>
+  </div>
+
+  <div id="sign-panel-footer">
+    <button class="btn btn-primary" id="btn-apply-sign" disabled>
+      Appliquer le panneau
+    </button>
+    <button class="btn btn-ghost" onclick="closeSignPanel()">Annuler</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<script src="/static/app.js"></script>
+
+<!-- Sync the 2nd simulate button with state -->
+<script>
+  // Keep the bottom simulate button in sync
+  const origSimulate = window.simulate;
+  document.getElementById("btn-simulate").addEventListener("click", () => {
+    document.getElementById("btn-simulate-bottom").disabled = true;
+  });
+
+  // View mode: update legend on change
+  document.querySelectorAll(".vm-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const mode = btn.dataset.mode;
+      const titleEl = document.getElementById("legend-title");
+      const closedRow = document.getElementById("legend-closed");
+      if (mode === "diff") {
+        titleEl.textContent = "Variation de trafic";
+      } else {
+        titleEl.textContent = "Score de trafic";
+      }
+      closedRow.style.display = (mode !== "current") ? "flex" : "none";
+    });
+  });
+
+  // Keep bottom button in sync with top button state
+  const observer = new MutationObserver(() => {
+    document.getElementById("btn-simulate-bottom").disabled =
+      document.getElementById("btn-simulate").disabled;
+  });
+  observer.observe(document.getElementById("btn-simulate"), { attributes: true });
+</script>
+
+</body>
+</html>

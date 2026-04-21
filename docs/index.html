@@ -3,437 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RouteOptimization · OLLN Traffic</title>
+  <title>OLLN · Optimisation routière</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --bg:      #0f1117;
-      --panel:   #1a1d27;
-      --card:    #22263a;
-      --border:  #2e3350;
-      --text:    #e2e8f0;
-      --muted:   #8892a4;
-      --accent:  #4f8ef7;
-      --green:   #2ecc71;
-      --red:     #e74c3c;
-      --orange:  #e67e22;
-      --yellow:  #f1c40f;
-    }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-    }
-
-    /* ── Hero ── */
-    .hero {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 72px 24px 56px;
-      text-align: center;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(79,142,247,.15);
-      border: 1px solid rgba(79,142,247,.3);
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 24px;
-      letter-spacing: .4px;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    .hero h1 span { color: var(--accent); }
-
-    .hero p {
-      font-size: 17px;
-      color: var(--muted);
-      line-height: 1.7;
-      max-width: 600px;
-      margin: 0 auto 36px;
-    }
-
-    .cta-row {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 24px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all .15s;
-    }
-    .btn-primary { background: var(--accent); color: #fff; }
-    .btn-primary:hover { background: #3a7be8; transform: translateY(-1px); }
-    .btn-ghost {
-      background: transparent;
-      color: var(--muted);
-      border: 1px solid var(--border);
-    }
-    .btn-ghost:hover { background: var(--card); color: var(--text); }
-
-    /* ── Screenshot ── */
-    .screenshot-wrap {
-      max-width: 900px;
-      margin: 0 auto 80px;
-      padding: 0 24px;
-    }
-    .screenshot-frame {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 24px 80px rgba(0,0,0,.6);
-    }
-    .frame-bar {
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .dot { width: 10px; height: 10px; border-radius: 50%; }
-    .dot.r { background: var(--red); }
-    .dot.y { background: var(--yellow); }
-    .dot.g { background: var(--green); }
-    .frame-url {
-      flex: 1;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 5px;
-      padding: 4px 10px;
-      font-size: 12px;
-      color: var(--muted);
-      text-align: center;
-    }
-    .map-preview {
-      height: 340px;
-      background: #d4dbe8;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .map-preview svg { width: 100%; height: 100%; position: absolute; inset: 0; }
-    .sidebar-preview {
-      position: absolute;
-      left: 0; top: 0; bottom: 0;
-      width: 220px;
-      background: var(--panel);
-      border-right: 1px solid var(--border);
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .sp-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--muted); }
-    .sp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-    .sp-box {
-      background: var(--card);
-      border-radius: 7px;
-      padding: 8px;
-      border: 1px solid var(--border);
-    }
-    .sp-box .lbl { font-size: 9px; color: var(--muted); font-weight: 600; text-transform: uppercase; }
-    .sp-box .val { font-size: 18px; font-weight: 700; margin-top: 2px; }
-    .sp-box .sub { font-size: 9px; color: var(--muted); }
-
-    /* ── Features ── */
-    .section {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .8px;
-      color: var(--muted);
-      margin-bottom: 40px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-    }
-    .feature-card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 22px 20px;
-      transition: border-color .15s;
-    }
-    .feature-card:hover { border-color: var(--accent); }
-    .feature-icon { font-size: 28px; margin-bottom: 12px; }
-    .feature-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-    .feature-card p  { font-size: 13px; color: var(--muted); line-height: 1.6; }
-
-    /* ── Tech stack ── */
-    .stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 32px;
-    }
-    .tag {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 5px 12px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--muted);
-    }
-
-    /* ── Signs ── */
-    .signs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-    }
-    .sign-card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .sign-icon { font-size: 26px; flex-shrink: 0; }
-    .sign-card h4 { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
-    .sign-card p  { font-size: 11px; color: var(--muted); }
-
-    /* ── Footer ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 24px;
-      text-align: center;
-      font-size: 12px;
-      color: var(--muted);
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Hero -->
-<div class="hero">
-  <div class="badge">🗺️ Simulation trafic · Belgique</div>
-  <h1>Optimisation routière<br><span>Ottignies-Louvain-la-Neuve</span></h1>
-  <p>
-    Visualisez le trafic réel sur le réseau routier d'OLLN, simulez l'impact
-    de panneaux routiers et analysez la redistribution du trafic en temps réel.
-  </p>
-  <div class="cta-row">
-    <a class="btn btn-primary" href="https://github.com/MGE-Agilos/RouteOptimization" target="_blank">
-      ⭐ Voir le code source
-    </a>
-    <a class="btn btn-ghost" href="https://github.com/MGE-Agilos/RouteOptimization/blob/main/README.md" target="_blank">
-      Documentation
-    </a>
+<!-- ── Top bar ─────────────────────────────────────────────── -->
+<div id="topbar">
+  <div class="logo">OLLN <span>Traffic</span></div>
+  <div style="font-size:12px;color:var(--text-muted);margin-left:4px">
+    Ottignies-Louvain-la-Neuve · Simulation panneaux routiers
+  </div>
+  <div class="sep"></div>
+  <button class="btn btn-ghost" id="btn-reset">&#8634; Réinitialiser</button>
+  <button class="btn btn-primary" id="btn-simulate" disabled>&#9654; Simuler</button>
+</div>
+
+<!-- ── Main ────────────────────────────────────────────────── -->
+<div id="main">
+
+  <!-- Left sidebar -->
+  <div id="sidebar">
+
+    <!-- Current stats -->
+    <div class="sidebar-section">
+      <h3>Trafic actuel</h3>
+      <div class="stats-grid">
+        <div class="stat-box red">
+          <div class="label">Critique</div>
+          <div class="value" id="stat-critique">–</div>
+          <div class="sub">segments ≥ 65</div>
+        </div>
+        <div class="stat-box orange">
+          <div class="label">Élevé</div>
+          <div class="value" id="stat-eleve">–</div>
+          <div class="sub">segments ≥ 40</div>
+        </div>
+        <div class="stat-box yellow">
+          <div class="label">Modéré</div>
+          <div class="value" id="stat-modere">–</div>
+          <div class="sub">segments ≥ 20</div>
+        </div>
+        <div class="stat-box green">
+          <div class="label">Faible</div>
+          <div class="value" id="stat-faible">–</div>
+          <div class="sub">segments &lt; 20</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison (visible after simulation) -->
+    <div class="sidebar-section" id="compare-section" style="display:none">
+      <h3>Avant / Après simulation</h3>
+      <div id="compare-rows"></div>
+    </div>
+
+    <!-- Applied signs list -->
+    <div class="sidebar-section" style="padding-bottom:8px">
+      <h3>Panneaux appliqués</h3>
+    </div>
+    <div id="signs-list">
+      <div class="empty-state">
+        <div class="icon">🗺️</div>
+        Cliquez sur une route pour y poser un panneau.
+      </div>
+    </div>
+
+    <!-- Simulate button at bottom -->
+    <div id="simulate-bar">
+      <button class="btn btn-success" id="btn-simulate-bottom" onclick="simulate()" disabled>
+        &#9654; Lancer la simulation
+      </button>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map-container">
+    <div id="map"></div>
+
+    <!-- View mode selector (shown after simulation) -->
+    <div id="view-modes">
+      <button class="vm-btn active" data-mode="current">Base</button>
+      <button class="vm-btn" data-mode="simulated">Simulé</button>
+      <button class="vm-btn" data-mode="diff">Différence</button>
+    </div>
+
+    <!-- Legend -->
+    <div id="legend">
+      <h4 id="legend-title">Score de trafic</h4>
+      <div class="legend-row">
+        <div class="legend-color crit"></div>
+        <span>Critique (≥ 65)</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-color high"></div>
+        <span>Élevé (≥ 40)</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-color med"></div>
+        <span>Modéré (≥ 20)</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-color low"></div>
+        <span>Faible (&lt; 20)</span>
+      </div>
+      <div class="legend-row" id="legend-closed" style="display:none">
+        <div class="legend-color closed"></div>
+        <span>Route fermée</span>
+      </div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);
+                  font-size:10px;color:var(--text-muted)" id="model-info">
+        Modèle OD · <span id="poi-count">…</span> POI OSM
+      </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p id="loading-msg">Chargement…</p>
+    </div>
+  </div>
+
+</div><!-- #main -->
+
+<!-- ── Right panel: sign selector ──────────────────────────── -->
+<div id="sign-panel">
+  <div id="sign-panel-header">
+    <div class="road-info">
+      <div class="road-name" id="sp-road-name">Rue sans nom</div>
+      <div class="road-meta" id="sp-road-meta">–</div>
+    </div>
+    <button id="sign-panel-close" title="Fermer">×</button>
+  </div>
+
+  <div style="padding:8px 16px;border-bottom:1px solid var(--border);
+              font-size:12px;color:var(--text-muted)" id="sp-vehicles"></div>
+
+  <div class="road-score-bar">
+    <div class="score-label">Score de trafic</div>
+    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px">
+      <div class="score-big" id="sp-score-big">0</div>
+      <div style="font-size:13px;font-weight:600" id="sp-score-cat">–</div>
+    </div>
+    <div class="score-track">
+      <div class="score-fill" id="sp-score-fill" style="width:0%"></div>
+    </div>
+    <div class="score-nums"><span>0</span><span>50</span><span>100</span></div>
+  </div>
+
+  <div id="sign-types">
+    <h4>Choisissez un panneau</h4>
+    <div id="sign-types-list"></div>
+  </div>
+
+  <div id="sign-panel-footer">
+    <button class="btn btn-primary" id="btn-apply-sign" disabled>
+      Appliquer le panneau
+    </button>
+    <button class="btn btn-ghost" onclick="closeSignPanel()">Annuler</button>
   </div>
 </div>
 
-<!-- App preview (SVG mockup) -->
-<div class="screenshot-wrap">
-  <div class="screenshot-frame">
-    <div class="frame-bar">
-      <div class="dot r"></div>
-      <div class="dot y"></div>
-      <div class="dot g"></div>
-      <div class="frame-url">OLLN Traffic · Simulation panneaux routiers</div>
-    </div>
-    <div class="map-preview">
-      <!-- Road network SVG mockup -->
-      <svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <rect width="900" height="340" fill="#dde4ed"/>
-        <!-- Grid streets -->
-        <g stroke="#c8d0de" stroke-width="6" fill="none">
-          <line x1="220" y1="0" x2="240" y2="340"/>
-          <line x1="320" y1="0" x2="330" y2="340"/>
-          <line x1="450" y1="0" x2="460" y2="340"/>
-          <line x1="580" y1="0" x2="600" y2="340"/>
-          <line x1="720" y1="0" x2="740" y2="340"/>
-          <line x1="220" y1="80" x2="900" y2="70"/>
-          <line x1="220" y1="160" x2="900" y2="155"/>
-          <line x1="220" y1="240" x2="900" y2="250"/>
-          <line x1="220" y1="310" x2="900" y2="315"/>
-        </g>
-        <!-- Traffic colored roads -->
-        <g fill="none" stroke-linecap="round">
-          <line x1="450" y1="0" x2="460" y2="340" stroke="#e74c3c" stroke-width="5" opacity=".8"/>
-          <line x1="220" y1="160" x2="900" y2="155" stroke="#e67e22" stroke-width="4" opacity=".8"/>
-          <line x1="220" y1="80" x2="900" y2="70" stroke="#f1c40f" stroke-width="3.5" opacity=".8"/>
-          <line x1="580" y1="0" x2="600" y2="340" stroke="#2ecc71" stroke-width="3" opacity=".8"/>
-          <line x1="320" y1="0" x2="330" y2="340" stroke="#2ecc71" stroke-width="3" opacity=".7"/>
-          <line x1="220" y1="240" x2="900" y2="250" stroke="#e74c3c" stroke-width="5" opacity=".75"/>
-        </g>
-        <!-- Buildings -->
-        <g fill="#c4cdd9" opacity=".6">
-          <rect x="260" y="20" width="45" height="55" rx="3"/>
-          <rect x="360" y="20" width="70" height="35" rx="3"/>
-          <rect x="480" y="20" width="80" height="45" rx="3"/>
-          <rect x="260" y="180" width="40" height="50" rx="3"/>
-          <rect x="360" y="175" width="70" height="60" rx="3"/>
-          <rect x="620" y="20" width="90" height="40" rx="3"/>
-          <rect x="620" y="180" width="100" height="60" rx="3"/>
-        </g>
-        <!-- Sign marker -->
-        <g transform="translate(456,150)">
-          <circle r="14" fill="#4f8ef7" opacity=".9"/>
-          <text x="0" y="5" text-anchor="middle" font-size="14">🚧</text>
-        </g>
-        <!-- Sidebar -->
-        <rect x="0" y="0" width="220" height="340" fill="#1a1d27" opacity=".97"/>
-        <text x="14" y="30" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#8892a4" letter-spacing="1">TRAFIC ACTUEL</text>
-        <rect x="14" y="40" width="90" height="56" rx="7" fill="#22263a"/>
-        <text x="22" y="56" font-family="Inter,sans-serif" font-size="8" fill="#8892a4">CRITIQUE</text>
-        <text x="22" y="76" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#e74c3c">48</text>
-        <rect x="116" y="40" width="90" height="56" rx="7" fill="#22263a"/>
-        <text x="124" y="56" font-family="Inter,sans-serif" font-size="8" fill="#8892a4">ELEVE</text>
-        <text x="124" y="76" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#e67e22">124</text>
-        <rect x="14" y="104" width="90" height="56" rx="7" fill="#22263a"/>
-        <text x="22" y="120" font-family="Inter,sans-serif" font-size="8" fill="#8892a4">MODERE</text>
-        <text x="22" y="140" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#f1c40f">387</text>
-        <rect x="116" y="104" width="90" height="56" rx="7" fill="#22263a"/>
-        <text x="124" y="120" font-family="Inter,sans-serif" font-size="8" fill="#8892a4">FAIBLE</text>
-        <text x="124" y="140" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#2ecc71">2480</text>
-        <text x="14" y="186" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#8892a4" letter-spacing="1">PANNEAUX APPLIQUES</text>
-        <rect x="14" y="196" width="192" height="50" rx="8" fill="#22263a"/>
-        <text x="36" y="226" font-family="Inter,sans-serif" font-size="18">🚧</text>
-        <text x="58" y="216" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Fermeture</text>
-        <text x="58" y="230" font-family="Inter,sans-serif" font-size="10" fill="#8892a4">Bd de Lauzelle</text>
-        <rect x="14" y="280" width="192" height="48" rx="8" fill="#4f8ef7"/>
-        <text x="108" y="309" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Lancer la simulation</text>
-      </svg>
-    </div>
-  </div>
-</div>
+<!-- Toast -->
+<div id="toast"></div>
 
-<!-- Features -->
-<div class="section">
-  <div class="section-title">Fonctionnalités</div>
-  <div class="features">
-    <div class="feature-card">
-      <div class="feature-icon">🗺️</div>
-      <h3>Réseau OSM réel</h3>
-      <p>3 039 segments routiers chargés depuis OpenStreetMap. Données à jour sur toute la commune d'OLLN.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <h3>Modèle de trafic hybride</h3>
-      <p>Simulation OD pondérée par 4 114 points d'intérêt + betweenness centrality ancrée sur les AADT belges.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔄</div>
-      <h3>Redistribution réelle</h3>
-      <p>Quand une route est bloquée, le trafic se redistribue automatiquement sur les itinéraires alternatifs.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">⚡</div>
-      <h3>Simulation instantanée</h3>
-      <p>Posez des panneaux sur n'importe quel segment et voyez l'impact sur tout le réseau en quelques secondes.</p>
-    </div>
-  </div>
-</div>
+<script src="app.js"></script>
 
-<!-- Signs -->
-<div class="section">
-  <div class="section-title">Panneaux simulables</div>
-  <div class="signs-grid">
-    <div class="sign-card">
-      <div class="sign-icon">🚧</div>
-      <div>
-        <h4>Fermeture / Déviation</h4>
-        <p>Bloque le segment, trafic = 0</p>
-      </div>
-    </div>
-    <div class="sign-card">
-      <div class="sign-icon">🔵</div>
-      <div>
-        <h4>Zone 30</h4>
-        <p>Réduit l'attractivité du segment</p>
-      </div>
-    </div>
-    <div class="sign-card">
-      <div class="sign-icon">⚪</div>
-      <div>
-        <h4>Zone 50</h4>
-        <p>Légère réduction de débit</p>
-      </div>
-    </div>
-    <div class="sign-card">
-      <div class="sign-icon">🟡</div>
-      <div>
-        <h4>Priorité</h4>
-        <p>Augmente le débit du segment</p>
-      </div>
-    </div>
-    <div class="sign-card">
-      <div class="sign-icon">⬆️</div>
-      <div>
-        <h4>Sens unique</h4>
-        <p>Supprime le sens inverse</p>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Sync buttons + legend -->
+<script>
+  document.getElementById("btn-simulate").addEventListener("click", () => {
+    document.getElementById("btn-simulate-bottom").disabled = true;
+  });
 
-<!-- Stack -->
-<div class="section">
-  <div class="section-title">Technologies</div>
-  <div class="stack">
-    <div class="tag">Python 3.11</div>
-    <div class="tag">Flask</div>
-    <div class="tag">OSMnx</div>
-    <div class="tag">NetworkX</div>
-    <div class="tag">NumPy</div>
-    <div class="tag">GeoPandas</div>
-    <div class="tag">Leaflet.js</div>
-    <div class="tag">OpenStreetMap</div>
-    <div class="tag">Betweenness Centrality</div>
-    <div class="tag">OD Simulation</div>
-    <div class="tag">AADT Wallonie</div>
-  </div>
-</div>
+  document.querySelectorAll(".vm-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const mode = btn.dataset.mode;
+      document.getElementById("legend-title").textContent =
+        mode === "diff" ? "Variation de trafic" : "Score de trafic";
+      document.getElementById("legend-closed").style.display =
+        mode !== "current" ? "flex" : "none";
+    });
+  });
 
-<footer>
-  Projet open source ·
-  <a href="https://github.com/MGE-Agilos/RouteOptimization" target="_blank">github.com/MGE-Agilos/RouteOptimization</a>
-  · Données © OpenStreetMap contributors
-</footer>
+  const observer = new MutationObserver(() => {
+    document.getElementById("btn-simulate-bottom").disabled =
+      document.getElementById("btn-simulate").disabled;
+  });
+  observer.observe(document.getElementById("btn-simulate"), { attributes: true });
+</script>
 
 </body>
 </html>

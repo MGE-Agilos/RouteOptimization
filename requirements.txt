@@ -1,4 +1,5 @@
 flask
+gunicorn
 osmnx
 networkx
 geopandas

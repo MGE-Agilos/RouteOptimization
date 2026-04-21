@@ -5,13 +5,14 @@ Ottignies-Louvain-la-Neuve
   Véhicules: betweenness intra-type, ancré sur la base (redistribution réelle)
 """
 
-from flask import Flask, jsonify, request, render_template
-import osmnx as ox
-import networkx as nx
-import numpy as np
-from shapely.geometry import LineString
-import warnings
+import os
 import copy
+import pickle
+import warnings
+
+import numpy as np
+from flask import Flask, jsonify, request, render_template
+from shapely.geometry import LineString
 
 from traffic_model import (
     load_poi_attractiveness,
@@ -24,16 +25,20 @@ warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
 
-CITY = "Ottignies-Louvain-la-Neuve, Belgium"
+CITY      = "Ottignies-Louvain-la-Neuve, Belgium"
+CACHE_DIR = os.path.join(os.path.dirname(__file__), "precomputed")
+CACHE_PKL = os.path.join(CACHE_DIR, "data.pkl")
 
-# ── État global (calculé une fois au démarrage) ───────────────────────────────
-G_original      = None
-attractiveness  = None
-model_meta      = {}
-base_type_max_bc = None   # ancre betweenness par type — NE CHANGE JAMAIS
-base_geojson    = None
-base_stats      = None
+# ── État global ───────────────────────────────────────────────────────────────
+G_original       = None
+attractiveness   = None
+model_meta       = {}
+base_type_max_bc = None
+base_geojson     = None
+base_stats       = None
 
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def get_str(val):
     if isinstance(val, list): return val[0] if val else ""
@@ -141,6 +146,66 @@ def apply_signs(G_base, signs):
     return G
 
 
+# ── Startup ───────────────────────────────────────────────────────────────────
+
+def _startup():
+    global G_original, attractiveness, model_meta
+    global base_type_max_bc, base_geojson, base_stats
+
+    import osmnx as ox
+
+    if os.path.exists(CACHE_PKL):
+        print("Chargement depuis le cache précalculé...")
+        with open(CACHE_PKL, "rb") as f:
+            cache = pickle.load(f)
+        G_original       = cache["G_original"]
+        attractiveness   = cache["attractiveness"]
+        model_meta       = cache["model_meta"]
+        base_type_max_bc = cache["base_type_max_bc"]
+        base_geojson     = cache["base_geojson"]
+        base_stats       = cache["base_stats"]
+        print(f"  Cache chargé : {G_original.number_of_nodes()} nœuds · "
+              f"{G_original.number_of_edges()} arêtes · "
+              f"{model_meta.get('n_poi', 0)} POI")
+        return
+
+    print(f"Chargement OSM : {CITY}...")
+    G_original = ox.graph_from_place(CITY, network_type="drive", simplify=True)
+    print(f"  {G_original.number_of_nodes()} nœuds · {G_original.number_of_edges()} arêtes")
+
+    print("Points d'intérêt OSM...")
+    attractiveness, model_meta = load_poi_attractiveness(G_original, CITY)
+    if attractiveness is None:
+        attractiveness = {n: 1.0 for n in G_original.nodes()}
+        model_meta = {"n_poi": 0}
+
+    print("Scores OD (simulation)...")
+    od_counts, _  = simulate_od_traffic(G_original, attractiveness, n_samples=3000)
+    base_scores   = od_scores(G_original, od_counts)
+
+    print("Véhicules (betweenness intra-type, k=300)...")
+    base_veh, base_type_max_bc = compute_vehicles(G_original, k=300)
+
+    base_geojson = graph_to_geojson(G_original, base_scores, base_veh)
+    base_stats   = compute_stats(base_geojson)
+
+    vehs = [f["properties"]["vehicles"] for f in base_geojson["features"]]
+    print(f"  Véhicules : min={min(vehs)}  moy={int(np.mean(vehs))}  max={max(vehs)}")
+    print(f"  {model_meta.get('n_poi', 0)} POI comme attracteurs")
+
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    with open(CACHE_PKL, "wb") as f:
+        pickle.dump({
+            "G_original":       G_original,
+            "attractiveness":   attractiveness,
+            "model_meta":       model_meta,
+            "base_type_max_bc": base_type_max_bc,
+            "base_geojson":     base_geojson,
+            "base_stats":       base_stats,
+        }, f, protocol=4)
+    print(f"  Cache sauvegarde -> {CACHE_PKL}")
+
+
 # ── Routes Flask ──────────────────────────────────────────────────────────────
 
 @app.route("/")
@@ -173,12 +238,9 @@ def simulate():
     try:
         G_mod = apply_signs(G_original, signs)
 
-        # Score : OD sur graphe modifié
         od_mod, _ = simulate_od_traffic(G_mod, attractiveness, n_samples=1500)
         scores_mod = od_scores(G_mod, od_mod)
 
-        # Véhicules : betweenness ancré sur la base → redistribution réelle
-        # Les routes fermées ne sont pas dans G_mod → betweenness=0 → veh=0
         vehicles_mod, _ = compute_vehicles(
             G_mod, base_type_max_bc=base_type_max_bc, k=150
         )
@@ -200,7 +262,6 @@ def simulate():
             if eid in sign_map:
                 feat["properties"]["sign"] = sign_map[eid]["type"]
 
-        # Routes fermées → vehicles=0, delta négatif
         mod_ids = {f["properties"]["edge_id"] for f in geojson_mod["features"]}
         for feat in base_geojson["features"]:
             eid = feat["properties"]["edge_id"]
@@ -229,33 +290,9 @@ def reset():
     return jsonify({"geojson": base_geojson, "stats": base_stats})
 
 
-# ── Startup ───────────────────────────────────────────────────────────────────
+# Déclenché à l'import (gunicorn) ET à l'exécution directe
+_startup()
 
 if __name__ == "__main__":
-    print(f"Chargement OSM : {CITY}...")
-    G_original = ox.graph_from_place(CITY, network_type="drive", simplify=True)
-    print(f"  {G_original.number_of_nodes()} nœuds · {G_original.number_of_edges()} arêtes")
-
-    print("Points d'intérêt OSM...")
-    attractiveness, model_meta = load_poi_attractiveness(G_original, CITY)
-    if attractiveness is None:
-        attractiveness = {n: 1.0 for n in G_original.nodes()}
-        model_meta = {"n_poi": 0}
-
-    print("Scores OD (simulation)...")
-    od_counts, _ = simulate_od_traffic(G_original, attractiveness, n_samples=3000)
-    base_scores  = od_scores(G_original, od_counts)
-
-    print("Véhicules (betweenness intra-type, k=300)...")
-    base_veh, base_type_max_bc = compute_vehicles(G_original, k=300)
-
-    base_geojson = graph_to_geojson(G_original, base_scores, base_veh)
-    base_stats   = compute_stats(base_geojson)
-
-    vehs = [f["properties"]["vehicles"] for f in base_geojson["features"]]
-    print(f"  Véhicules : min={min(vehs)}  moy={int(np.mean(vehs))}  max={max(vehs)}")
-    print(f"  Critique:{base_stats['critique']} Élevé:{base_stats['eleve']} "
-          f"Modéré:{base_stats['modere']} Faible:{base_stats['faible']}")
-    print(f"  {model_meta.get('n_poi',0)} POI comme attracteurs")
     print("\nServeur prêt → http://localhost:5000")
     app.run(debug=False, port=5000, use_reloader=False)

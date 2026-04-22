@@ -221,8 +221,8 @@ def gravity_trips(G, attractiveness, gateways, attractor_nodes=None,
           f"+ {n_routed_total - n_internal_routed - n_external_routed} attracteurs)")
 
     # Facteur de conversion trajets simulés → veh/jour
-    # Population OLLN ~33k + zones externes ~600k → ~150k voy/jour auto
-    total_daily_trips = 150_000
+    # OLLN ~33k hab × 60% auto × 2 trajets + traffic externe ≈ 63k voy/jour
+    total_daily_trips = 63_000
     n_sim = max(n_routed_total, 1)
     scale = total_daily_trips / n_sim
 

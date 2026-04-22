@@ -1,11 +1,11 @@
 """
 Modèle de trafic hybride pour Ottignies-Louvain-la-Neuve.
 
-Score (0-100)  : simulation OD pondérée par POI → ranking relatif réaliste
-Véhicules/jour : betweenness centrality intra-type, ancré sur la base
-  → valeurs absolues calées sur les AADT belges
-  → quand une route est fermée : betweenness → 0 → véhicules → 0
-  → les routes voisines reçoivent le surplus (betweenness redistribué)
+Véhicules/jour = betweenness_veh + gravity_veh + local_access_veh
+  betweenness : trafic de transit (structurel, ancré AADT belge)
+  gravity     : flux OD gravitaires (communes + super-attracteurs)
+  local_access: trafic d'accès riverains (bâtiments OSM)
+Score (0-100) : vehicles / 100, plafonné à 100
 """
 
 import osmnx as ox
@@ -113,38 +113,73 @@ def load_poi_attractiveness(G, place_name):
     return attractiveness, meta
 
 
-# ── 2. Score OD (ranking relatif) ────────────────────────────────────────────
+# ── 2. Trafic d'accès local (bâtiments OSM) ──────────────────────────────────
 
-def simulate_od_traffic(G, attractiveness, n_samples=3000, seed=42):
-    """Simulation OD → compte de traversées par arête (pour le score 0-100)."""
-    np.random.seed(seed)
-    node_ids = list(G.nodes())
-    if not node_ids:
-        return {}, 0
+BUILDING_TRIPS = {
+    "house": 10, "detached": 10, "semidetached_house": 8,
+    "terrace": 6, "apartments": 15, "residential": 8,
+    "commercial": 40, "retail": 45, "supermarket": 80, "mall": 120,
+    "office": 25, "industrial": 20, "warehouse": 15,
+    "school": 30, "university": 100, "college": 60,
+    "hospital": 60, "clinic": 25,
+    "hotel": 30, "restaurant": 20,
+    "yes": 8,
+}
 
-    weights = np.array([attractiveness.get(n, 1.0) for n in node_ids], dtype=float)
-    weights /= weights.sum()
 
-    edge_counts = {(u, v, k): 0 for u, v, k in G.edges(keys=True)}
-    origins = np.random.choice(len(node_ids), size=n_samples, p=weights)
-    dests   = np.random.choice(len(node_ids), size=n_samples, p=weights)
+def compute_local_access(G, place_name):
+    """
+    Trafic d'accès local à partir des bâtiments OSM.
 
-    hits = 0
-    for i, j in zip(origins, dests):
-        o, d = node_ids[i], node_ids[j]
-        if o == d: continue
+    Chaque bâtiment génère un nombre de déplacements/jour (aller+retour)
+    selon son type. Ces déplacements sont affectés au segment de route le
+    plus proche du bâtiment.
+
+    Returns:
+        local_veh : {(u, v, key): int}
+        n_buildings : int
+    """
+    print("  Téléchargement des bâtiments OSM...")
+    try:
+        buildings = ox.features_from_place(place_name, tags={"building": True})
+    except Exception as e:
+        print(f"  /!\\ Bâtiments non disponibles: {e}")
+        return {(u, v, k): 0 for u, v, k in G.edges(keys=True)}, 0
+
+    bld_x, bld_y, bld_trips = [], [], []
+    for _, row in buildings.iterrows():
         try:
-            path = nx.shortest_path(G, o, d, weight="length")
-            hits += 1
-            for a, b in zip(path[:-1], path[1:]):
-                for k in G[a][b]:
-                    edge_counts[(a, b, k)] = edge_counts.get((a, b, k), 0) + 1
-                    break
-        except (nx.NetworkXNoPath, nx.NodeNotFound):
+            c = row.geometry.centroid
+            btype = row.get("building", "yes")
+            if isinstance(btype, float):
+                btype = "yes"
+            trips = BUILDING_TRIPS.get(str(btype), BUILDING_TRIPS["yes"])
+            bld_x.append(c.x)
+            bld_y.append(c.y)
+            bld_trips.append(trips)
+        except Exception:
             continue
 
-    print(f"  {hits}/{n_samples} trajets OD routés")
-    return edge_counts, hits
+    n_buildings = len(bld_x)
+    print(f"  {n_buildings} bâtiments chargés")
+    if n_buildings == 0:
+        return {(u, v, k): 0 for u, v, k in G.edges(keys=True)}, 0
+
+    nearest_nodes = ox.nearest_nodes(G, X=bld_x, Y=bld_y)
+    local_veh = {(u, v, k): 0 for u, v, k in G.edges(keys=True)}
+
+    for node_id, trips in zip(nearest_nodes, bld_trips):
+        for nbr in G.neighbors(node_id):
+            for key in G[node_id][nbr]:
+                edge = (node_id, nbr, key)
+                if edge in local_veh:
+                    local_veh[edge] += trips
+                    break
+            break
+
+    total_local = sum(local_veh.values())
+    print(f"  Trafic local total : {total_local:,} veh·traversées/jour")
+    return local_veh, n_buildings
 
 
 def vehicle_scores(vehicles, scale=100):
@@ -167,21 +202,20 @@ def vehicle_scores(vehicles, scale=100):
 
 # ── 3. Véhicules par betweenness intra-type (ancré sur la base) ─────────────
 
-def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None):
+def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None,
+                     gravity_counts=None, gravity_scale=1.0,
+                     local_access=None):
     """
-    Betweenness centrality intra-type → véhicules/jour.
-
-    Si tomtom est fourni ({edge_id: {frc, aadt_max, congestion, …}}),
-    l'AADT_MAX utilisé pour chaque segment est remplacé par la valeur
-    TomTom (basée sur le functionalRoadClass), plus précise qu'OSM.
-    Le facteur de congestion TomTom (currentSpeed/freeFlowSpeed) est
-    appliqué en inverse : moins de vitesse → plus de trafic.
+    Véhicules/jour = betweenness_veh + gravity_veh + local_access_veh.
 
     Args:
         G               : graphe (base ou modifié)
         base_type_max_bc: {hw: max_bc} calculé sur le graphe de base.
         k               : nb de sources pour l'approximation betweenness.
         tomtom          : dict enrichissement TomTom ou None.
+        gravity_counts  : {(u,v,key): int} traversées simulées gravité.
+        gravity_scale   : float, facteur de conversion traversées -> veh/jour.
+        local_access    : {(u,v,key): int} veh/jour accès local bâtiments.
 
     Returns:
         vehicles        : {(u,v,key): int}
@@ -203,7 +237,7 @@ def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None):
     else:
         anchor = base_type_max_bc
 
-    vehicles = {}
+    betweenness_veh = {}
     for hw, items in type_bc_values.items():
         hw_anchor = max(anchor.get(hw, 1e-9), 1e-9)
         aadt_max_default = AADT_MAX.get(hw, 1500)
@@ -214,19 +248,25 @@ def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None):
             tt       = (tomtom or {}).get(edge_id)
 
             if tt:
-                # TomTom disponible : AADT_MAX basé sur FRC + facteur congestion
                 aadt_max   = tt["aadt_max"]
                 congestion = tt.get("congestion", 1.0)
-                # congestion < 1 = ralenti = plus de trafic → inverse
                 cong_factor = min(1.0 / max(congestion, 0.1), 2.0)
                 veh = int(min(bc_norm, 2.5) * aadt_max * cong_factor)
             else:
                 veh = int(min(bc_norm, 2.5) * aadt_max_default)
 
-            vehicles[(u, v, key)] = veh
+            betweenness_veh[(u, v, key)] = veh
 
     for u, v, key in G.edges(keys=True):
-        if (u, v, key) not in vehicles:
-            vehicles[(u, v, key)] = 0
+        if (u, v, key) not in betweenness_veh:
+            betweenness_veh[(u, v, key)] = 0
+
+    vehicles = {}
+    for edge in G.edges(keys=True):
+        u, v, key = edge
+        bw  = betweenness_veh.get(edge, 0)
+        gv  = int((gravity_counts or {}).get(edge, 0) * gravity_scale)
+        lv  = (local_access or {}).get(edge, 0)
+        vehicles[edge] = bw + gv + lv
 
     return vehicles, anchor

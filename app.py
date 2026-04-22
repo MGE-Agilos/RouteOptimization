@@ -1,8 +1,8 @@
 """
 Application de visualisation et simulation du trafic routier
 Ottignies-Louvain-la-Neuve
-  Score    : OD pondéré par POI (ranking relatif)
-  Véhicules: betweenness intra-type, ancré sur la base (redistribution réelle)
+  Véhicules/jour = betweenness_veh + gravity_veh + local_access_veh
+  Score (0-100)  = min(100, vehicles / 100)
 """
 
 import os
@@ -18,6 +18,12 @@ from traffic_model import (
     load_poi_attractiveness,
     vehicle_scores,
     compute_vehicles,
+    compute_local_access,
+)
+from gravity_model import (
+    find_gateway_nodes,
+    find_attractor_nodes,
+    gravity_trips,
 )
 from tomtom_enricher import load_enrichment
 
@@ -36,7 +42,10 @@ model_meta       = {}
 base_type_max_bc = None
 base_geojson     = None
 base_stats       = None
-gateways         = None   # {zone_name: node_id} nœuds passerelles communes voisines
+gateways         = None
+base_gravity_counts = None
+base_gravity_scale  = 1.0
+base_local_access   = None
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -152,6 +161,7 @@ def apply_signs(G_base, signs):
 def _startup():
     global G_original, attractiveness, model_meta
     global base_type_max_bc, base_geojson, base_stats, gateways
+    global base_gravity_counts, base_gravity_scale, base_local_access
 
     import osmnx as ox
 
@@ -159,13 +169,16 @@ def _startup():
         print("Chargement depuis le cache précalculé...")
         with open(CACHE_PKL, "rb") as f:
             cache = pickle.load(f)
-        G_original       = cache["G_original"]
-        attractiveness   = cache["attractiveness"]
-        model_meta       = cache["model_meta"]
-        base_type_max_bc = cache["base_type_max_bc"]
-        base_geojson     = cache["base_geojson"]
-        base_stats       = cache["base_stats"]
-        gateways         = cache.get("gateways", {})
+        G_original          = cache["G_original"]
+        attractiveness      = cache["attractiveness"]
+        model_meta          = cache["model_meta"]
+        base_type_max_bc    = cache["base_type_max_bc"]
+        base_geojson        = cache["base_geojson"]
+        base_stats          = cache["base_stats"]
+        gateways            = cache.get("gateways", {})
+        base_gravity_counts = cache.get("base_gravity_counts", {})
+        base_gravity_scale  = cache.get("base_gravity_scale", 1.0)
+        base_local_access   = cache.get("base_local_access", {})
         print(f"  Cache chargé : {G_original.number_of_nodes()} nœuds · "
               f"{G_original.number_of_edges()} arêtes · "
               f"{model_meta.get('n_poi', 0)} POI · "
@@ -182,11 +195,32 @@ def _startup():
         attractiveness = {n: 1.0 for n in G_original.nodes()}
         model_meta = {"n_poi": 0}
 
-    print("Véhicules (betweenness intra-type, k=300)...")
+    print("Zones passerelles (modèle gravitaire)...")
+    gateways = find_gateway_nodes(G_original)
+    attractor_nodes = find_attractor_nodes(G_original)
+
+    print("Simulation gravitaire OD (communes + super-attracteurs)...")
+    base_gravity_counts, n_gravity, base_gravity_scale = gravity_trips(
+        G_original, attractiveness, gateways,
+        attractor_nodes=attractor_nodes,
+        n_internal=2000, n_external=2000,
+    )
+    model_meta["n_gravity_trips"] = n_gravity
+
+    print("Trafic d'accès local (bâtiments OSM)...")
+    base_local_access, n_buildings = compute_local_access(G_original, CITY)
+    model_meta["n_buildings"] = n_buildings
+
+    print("Véhicules combinés (betweenness + gravité + accès local, k=300)...")
     tomtom = load_enrichment()
     if tomtom:
         print(f"  TomTom : {len(tomtom)} segments enrichis")
-    base_veh, base_type_max_bc = compute_vehicles(G_original, k=300, tomtom=tomtom or None)
+    base_veh, base_type_max_bc = compute_vehicles(
+        G_original, k=300, tomtom=tomtom or None,
+        gravity_counts=base_gravity_counts,
+        gravity_scale=base_gravity_scale,
+        local_access=base_local_access,
+    )
     base_scores = vehicle_scores(base_veh)
 
     base_geojson = graph_to_geojson(G_original, base_scores, base_veh)
@@ -194,18 +228,21 @@ def _startup():
 
     vehs = [f["properties"]["vehicles"] for f in base_geojson["features"]]
     print(f"  Véhicules : min={min(vehs)}  moy={int(np.mean(vehs))}  max={max(vehs)}")
-    print(f"  {model_meta.get('n_poi', 0)} POI comme attracteurs")
+    print(f"  {model_meta.get('n_poi', 0)} POI · {n_buildings} bâtiments · {n_gravity} trajets gravitaires")
 
     os.makedirs(CACHE_DIR, exist_ok=True)
     with open(CACHE_PKL, "wb") as f:
         pickle.dump({
-            "G_original":       G_original,
-            "attractiveness":   attractiveness,
-            "model_meta":       model_meta,
-            "base_type_max_bc": base_type_max_bc,
-            "base_geojson":     base_geojson,
-            "base_stats":       base_stats,
-            "gateways":         gateways,
+            "G_original":          G_original,
+            "attractiveness":      attractiveness,
+            "model_meta":          model_meta,
+            "base_type_max_bc":    base_type_max_bc,
+            "base_geojson":        base_geojson,
+            "base_stats":          base_stats,
+            "gateways":            gateways,
+            "base_gravity_counts": base_gravity_counts,
+            "base_gravity_scale":  base_gravity_scale,
+            "base_local_access":   base_local_access,
         }, f, protocol=4)
     print(f"  Cache sauvegarde -> {CACHE_PKL}")
 
@@ -243,9 +280,17 @@ def simulate():
         G_mod = apply_signs(G_original, signs)
 
         tomtom = load_enrichment()
+        # Filter gravity/local_access to edges still present in G_mod
+        mod_edges = set(G_mod.edges(keys=True))
+        grav_mod  = {e: v for e, v in (base_gravity_counts or {}).items() if e in mod_edges}
+        la_mod    = {e: v for e, v in (base_local_access or {}).items() if e in mod_edges}
+
         vehicles_mod, _ = compute_vehicles(
             G_mod, base_type_max_bc=base_type_max_bc, k=150,
             tomtom=tomtom or None,
+            gravity_counts=grav_mod,
+            gravity_scale=base_gravity_scale,
+            local_access=la_mod,
         )
         scores_mod = vehicle_scores(vehicles_mod)
 
@@ -298,5 +343,5 @@ def reset():
 _startup()
 
 if __name__ == "__main__":
-    print("\nServeur prêt → http://localhost:5000")
+    print("\nServeur pret -> http://localhost:5000")
     app.run(debug=False, port=5000, use_reloader=False)

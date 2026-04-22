@@ -307,6 +307,17 @@ function simulateLocally() {
   const isolatedIds = new Set();
   if (state.adjacency) {
     const closedIds = new Set(state.signs.map(s => s.edge_id));
+    // Fermer aussi la direction inverse : OSM a des arêtes dirigées u→v ET v→u séparément.
+    // Fermer u:v:k sans fermer v:u:k' laisse la direction inverse ouverte dans l'Union-Find.
+    // La réciproque partage toujours les deux nœuds → elle est dans adjacency[u:v:k].
+    state.signs.forEach(s => {
+      const parts = s.edge_id.split(':');
+      if (parts.length < 2) return;
+      const reversePrefix = `${parts[1]}:${parts[0]}:`;
+      (state.adjacency[s.edge_id] || []).forEach(nid => {
+        if (nid.startsWith(reversePrefix)) closedIds.add(nid);
+      });
+    });
     const allEdgeIds = state.baseGeoJSON.features.map(f => f.properties.edge_id);
 
     // Union-Find itératif sur les arêtes non-fermées

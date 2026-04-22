@@ -4,6 +4,7 @@ const state = {
   simGeoJSON:   null,
   baseStats:    null,
   simStats:     null,
+  adjacency:    null,   // {edge_id: [neighbor_edge_ids]}
   signs:        [],
   selectedEdge: null,
   selectedSign: null,
@@ -278,29 +279,76 @@ function simulateLocally() {
   const signMap = {};
   state.signs.forEach(s => { signMap[s.edge_id] = s.type; });
 
-  const features = state.baseGeoJSON.features.map(feat => {
+  // Passe 1 : appliquer les effets directs sur les segments signalés
+  const propMap = {};
+  state.baseGeoJSON.features.forEach(feat => {
     const p = feat.properties;
     const stype = signMap[p.edge_id];
-    if (!stype) return { ...feat, properties: { ...p, delta: 0, veh_delta: null } };
-
+    if (!stype) {
+      propMap[p.edge_id] = { ...p, delta: 0, veh_delta: 0 };
+      return;
+    }
     const eff = SIGN_EFFECTS[stype] || { scoreMul: 1, vehMul: 1, closed: false };
     const newScore = Math.min(100, Math.max(0, p.score * eff.scoreMul));
     const newVeh   = Math.round((p.vehicles || 0) * eff.vehMul);
-
-    return {
-      ...feat,
-      properties: {
-        ...p,
-        score:     Math.round(newScore * 10) / 10,
-        vehicles:  newVeh,
-        category:  scoreToCategory(newScore),
-        closed:    eff.closed,
-        sign:      stype,
-        delta:     Math.round((newScore - p.score) * 10) / 10,
-        veh_delta: newVeh - (p.vehicles || 0),
-      },
+    propMap[p.edge_id] = {
+      ...p,
+      score:     Math.round(newScore * 10) / 10,
+      vehicles:  newVeh,
+      category:  scoreToCategory(newScore),
+      closed:    eff.closed,
+      sign:      stype,
+      delta:     Math.round((newScore - p.score) * 10) / 10,
+      veh_delta: newVeh - (p.vehicles || 0),
     };
   });
+
+  // Passe 2 : redistribuer le trafic perdu vers les routes adjacentes
+  if (state.adjacency) {
+    state.signs.forEach(s => {
+      const eff = SIGN_EFFECTS[s.type];
+      if (!eff || !eff.closed) return;
+
+      const base = state.baseGeoJSON.features.find(f => f.properties.edge_id === s.edge_id);
+      if (!base) return;
+
+      const lostVeh   = base.properties.vehicles || 0;
+      const lostScore = base.properties.score    || 0;
+      if (lostVeh === 0 && lostScore === 0) return;
+
+      const neighbors = (state.adjacency[s.edge_id] || [])
+        .filter(nid => !propMap[nid]?.closed);
+
+      if (neighbors.length === 0) return;
+
+      // Distribuer proportionnellement au véhicule de base du voisin
+      const totalNeighborVeh = neighbors.reduce((sum, nid) =>
+        sum + (propMap[nid]?.vehicles || 1), 0);
+
+      neighbors.forEach(nid => {
+        const np = propMap[nid];
+        if (!np) return;
+        const share = (np.vehicles || 1) / Math.max(totalNeighborVeh, 1);
+        const extraVeh   = Math.round(lostVeh * share * 0.7);   // 70% redistribué
+        const extraScore = lostScore * share * 0.5;
+
+        const newVeh   = np.vehicles + extraVeh;
+        const newScore = Math.min(100, np.score + extraScore);
+        propMap[nid] = {
+          ...np,
+          vehicles:  newVeh,
+          score:     Math.round(newScore * 10) / 10,
+          category:  scoreToCategory(newScore),
+          delta:     Math.round((newScore - (state.baseGeoJSON.features.find(f => f.properties.edge_id === nid)?.properties.score || newScore)) * 10) / 10,
+          veh_delta: newVeh - (state.baseGeoJSON.features.find(f => f.properties.edge_id === nid)?.properties.vehicles || 0),
+        };
+      });
+    });
+  }
+
+  const features = state.baseGeoJSON.features.map(feat =>
+    ({ ...feat, properties: propMap[feat.properties.edge_id] || feat.properties })
+  );
 
   return { type: "FeatureCollection", features };
 }
@@ -408,12 +456,14 @@ function updateStats() {
 async function loadNetwork() {
   showLoading("Chargement du réseau OSM…");
   try {
-    const [geoRes, statRes] = await Promise.all([
+    const [geoRes, statRes, adjRes] = await Promise.all([
       fetch("data/network.json"),
       fetch("data/stats.json"),
+      fetch("data/adjacency.json"),
     ]);
     state.baseGeoJSON = await geoRes.json();
     state.baseStats   = await statRes.json();
+    state.adjacency   = await adjRes.json();
 
     const poiEl = document.getElementById("poi-count");
     if (poiEl && state.baseStats.n_poi != null)

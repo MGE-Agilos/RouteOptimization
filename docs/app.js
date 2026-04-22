@@ -303,6 +303,30 @@ function simulateLocally() {
     };
   });
 
+  // Passe 1b : marquer les routes isolées (toutes leurs connexions sont fermées)
+  if (state.adjacency) {
+    const closedIds = new Set(state.signs.map(s => s.edge_id));
+    state.baseGeoJSON.features.forEach(feat => {
+      const eid = feat.properties.edge_id;
+      if (closedIds.has(eid)) return; // déjà fermée explicitement
+      const ownNeighbors = state.adjacency[eid] || [];
+      const hasOpenExit = ownNeighbors.some(nid => !closedIds.has(nid));
+      if (!hasOpenExit && ownNeighbors.length > 0) {
+        // Route coupée de tout le réseau : trafic = 0
+        const p = propMap[eid];
+        propMap[eid] = {
+          ...p,
+          vehicles:  0,
+          score:     0,
+          category:  "Faible",
+          closed:    true,
+          delta:     Math.round((0 - feat.properties.score) * 10) / 10,
+          veh_delta: -(feat.properties.vehicles || 0),
+        };
+      }
+    });
+  }
+
   // Passe 2 : redistribuer le trafic perdu vers les routes adjacentes
   if (state.adjacency) {
     state.signs.forEach(s => {
@@ -316,8 +340,18 @@ function simulateLocally() {
       const lostScore = base.properties.score    || 0;
       if (lostVeh === 0 && lostScore === 0) return;
 
+      // Collecter toutes les routes fermées (pour le test d'accessibilité)
+      const closedIds = new Set(state.signs.map(sg => sg.edge_id));
+
       const neighbors = (state.adjacency[s.edge_id] || [])
-        .filter(nid => !propMap[nid]?.closed);
+        .filter(nid => {
+          if (propMap[nid]?.closed) return false;
+          // Vérifier que la route voisine a au moins une connexion ouverte :
+          // si tous ses propres voisins sont fermés, elle est isolée du réseau.
+          const ownNeighbors = state.adjacency[nid] || [];
+          const hasOpenExit = ownNeighbors.some(nnid => !closedIds.has(nnid));
+          return hasOpenExit;
+        });
 
       if (neighbors.length === 0) return;
 

@@ -12,20 +12,22 @@ from math import radians, sin, cos, sqrt, atan2
 
 # ── Communes externes ────────────────────────────────────────────────────────
 # Sources : Statbel 2023 (population), ONSS 2022 (emplois estimés)
+# NB : Rixensart, Wavre, Court-Saint-Etienne, Mont-Saint-Guibert sont maintenant
+#      dans le graphe → déplacés vers INTERNAL_ATTRACTORS.
 EXTERNAL_ZONES = {
-    "Wavre":                   {"pop": 35_200, "emp": 18_000, "lat": 50.7175, "lon": 4.6015},
-    "Rixensart":               {"pop": 22_000, "emp":  4_000, "lat": 50.7005, "lon": 4.7002},
     "Grez-Doiceau":            {"pop": 13_200, "emp":  2_500, "lat": 50.7414, "lon": 4.6912},
     "Chaumont-Gistoux":        {"pop": 12_100, "emp":  2_000, "lat": 50.6728, "lon": 4.7264},
     "Perwez":                  {"pop":  8_500, "emp":  2_000, "lat": 50.6280, "lon": 4.7930},
-    "Mont-Saint-Guibert":      {"pop":  7_100, "emp":  4_200, "lat": 50.6178, "lon": 4.6930},
+    "Beauvechain":             {"pop":  6_700, "emp":  1_500, "lat": 50.7500, "lon": 4.7600},
+    "Jodoigne":                {"pop": 14_500, "emp":  3_500, "lat": 50.7254, "lon": 4.8685},
     "Walhain":                 {"pop":  7_200, "emp":  1_200, "lat": 50.5820, "lon": 4.6710},
     "Gembloux":                {"pop": 27_400, "emp":  9_000, "lat": 50.5660, "lon": 4.7115},
+    "Chastre":                 {"pop":  5_500, "emp":  1_000, "lat": 50.5750, "lon": 4.6330},
     "Nil-Saint-Vincent":       {"pop":  3_500, "emp":    500, "lat": 50.4950, "lon": 4.6700},
     "Namur":                   {"pop":115_000, "emp": 52_000, "lat": 50.4674, "lon": 4.8717},
-    "Court-Saint-Etienne":     {"pop": 12_200, "emp":  3_500, "lat": 50.6005, "lon": 4.5632},
     "Villers-la-Ville":        {"pop": 10_400, "emp":  2_000, "lat": 50.5892, "lon": 4.5290},
     "Nivelles":                {"pop": 28_500, "emp": 12_000, "lat": 50.5978, "lon": 4.3290},
+    "Braine-le-Chateau":       {"pop":  9_500, "emp":  2_500, "lat": 50.6270, "lon": 4.3770},
     "Waterloo":                {"pop": 30_200, "emp":  8_000, "lat": 50.7153, "lon": 4.3990},
     "La-Hulpe":                {"pop":  8_100, "emp":  3_000, "lat": 50.7292, "lon": 4.4817},
     "Braine-l-Alleud":         {"pop": 41_000, "emp": 14_000, "lat": 50.6820, "lon": 4.3700},
@@ -33,18 +35,33 @@ EXTERNAL_ZONES = {
 }
 
 # ── Super-attracteurs internes ───────────────────────────────────────────────
-# Points majeurs générateurs de trafic DANS le graphe OLLN
-# Chaque attracteur a une masse en "équivalents-voyages/jour"
+# Points majeurs générateurs de trafic DANS le graphe étendu
 INTERNAL_ATTRACTORS = {
-    "UCLouvain-campus":     {"lat": 50.6683, "lon": 4.6152, "mass": 35_000},
-    "Gare-Ottignies":       {"lat": 50.6730, "lon": 4.5701, "mass": 18_000},
-    "Parc-Scientifique":    {"lat": 50.6510, "lon": 4.6350, "mass": 12_000},
-    "E411-echangeur-8":     {"lat": 50.6461, "lon": 4.6297, "mass":  8_000},
-    "Centre-Ottignies":     {"lat": 50.6665, "lon": 4.5720, "mass":  6_000},
-    "Centre-LLN":           {"lat": 50.6690, "lon": 4.6110, "mass":  8_000},
+    # OLLN
+    "UCLouvain-campus":        {"lat": 50.6683, "lon": 4.6152, "mass": 35_000},
+    "Gare-Ottignies":          {"lat": 50.6730, "lon": 4.5701, "mass": 18_000},
+    "Parc-Scientifique":       {"lat": 50.6510, "lon": 4.6350, "mass": 12_000},
+    "E411-echangeur-8":        {"lat": 50.6461, "lon": 4.6297, "mass":  8_000},
+    "Centre-Ottignies":        {"lat": 50.6665, "lon": 4.5720, "mass":  6_000},
+    "Centre-LLN":              {"lat": 50.6690, "lon": 4.6110, "mass":  8_000},
+    # Wavre
+    "Centre-Wavre":            {"lat": 50.7175, "lon": 4.6015, "mass": 20_000},
+    "Gare-Wavre":              {"lat": 50.7141, "lon": 4.6148, "mass": 10_000},
+    "Zone-Ind-Wavre":          {"lat": 50.7320, "lon": 4.6380, "mass": 12_000},
+    # Rixensart
+    "Centre-Rixensart":        {"lat": 50.7005, "lon": 4.7002, "mass":  8_000},
+    "Gare-Rixensart":          {"lat": 50.6940, "lon": 4.6980, "mass":  6_000},
+    # Court-Saint-Etienne
+    "Centre-CSE":              {"lat": 50.6005, "lon": 4.5632, "mass":  5_000},
+    # Mont-Saint-Guibert
+    "Zone-Ind-MSG":            {"lat": 50.6178, "lon": 4.6930, "mass":  6_000},
+    # Lasne
+    "Centre-Lasne":            {"lat": 50.6520, "lon": 4.5340, "mass":  3_000},
 }
 
-OLLN_CENTER = {"lat": 50.6712, "lon": 4.5754}
+# Centre géographique de la zone étendue (OLLN + 5 communes)
+AREA_CENTER = {"lat": 50.665, "lon": 4.615}
+OLLN_CENTER = AREA_CENTER   # alias pour compatibilité
 
 
 def haversine_km(lat1, lon1, lat2, lon2):
@@ -234,8 +251,10 @@ def gravity_trips(G, attractiveness, gateways, attractor_nodes=None,
           f"+ {n_routed_total - n_internal_routed - n_external_routed} attracteurs)")
 
     # Facteur de conversion trajets simulés → veh/jour
-    # OLLN ~33k hab × 60% auto × 2 trajets + traffic externe ≈ 63k voy/jour
-    total_daily_trips = 63_000
+    # Zone étendue : OLLN 33k + Wavre 35k + Rixensart 22k + Lasne 14k
+    #   + CSE 12k + MSG 7k = ~123k hab × 60% auto × 2 trajets ≈ 148k,
+    # mais ~40% déjà capturés par betweenness → 90k voy/jour attribués au modèle gravitaire
+    total_daily_trips = 90_000
     n_sim = max(n_routed_total, 1)
     scale = total_daily_trips / n_sim
 

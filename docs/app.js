@@ -55,7 +55,7 @@ function fmtVehicles(v) {
 
 /* ── Map init ────────────────────────────────────────────────── */
 const map = L.map("map", { zoomControl: false, attributionControl: true })
-  .setView([50.668, 4.612], 13);
+  .setView([50.665, 4.615], 12);
 
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
   attribution: "© OpenStreetMap, © CARTO",

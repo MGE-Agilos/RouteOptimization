@@ -1,6 +1,6 @@
 """
 Application de visualisation et simulation du trafic routier
-Ottignies-Louvain-la-Neuve
+OLLN + Rixensart + Lasne + Wavre + Court-Saint-Etienne + Mont-Saint-Guibert
   Véhicules/jour = betweenness_veh + gravity_veh + local_access_veh
   Score (0-100)  = min(100, vehicles / 100)
 """
@@ -31,7 +31,16 @@ warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
 
-CITY      = "Ottignies-Louvain-la-Neuve, Belgium"
+CITIES = [
+    "Ottignies-Louvain-la-Neuve, Belgium",
+    "Rixensart, Belgium",
+    "Lasne, Belgium",
+    "Wavre, Belgium",
+    "Court-Saint-Etienne, Belgium",
+    "Mont-Saint-Guibert, Belgium",
+]
+CITY_LABEL = "OLLN + Rixensart + Lasne + Wavre + Court-Saint-Etienne + Mont-Saint-Guibert"
+CITY      = CITIES   # osmnx accepte une liste pour graph_from_place / features_from_place
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "precomputed")
 CACHE_PKL = os.path.join(CACHE_DIR, "data.pkl")
 
@@ -185,7 +194,7 @@ def _startup():
               f"{len(gateways)} zones externes")
         return
 
-    print(f"Chargement OSM : {CITY}...")
+    print(f"Chargement OSM : {CITY_LABEL}...")
     G_original = ox.graph_from_place(CITY, network_type="drive", simplify=True)
     print(f"  {G_original.number_of_nodes()} nœuds · {G_original.number_of_edges()} arêtes")
 

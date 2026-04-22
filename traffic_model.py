@@ -35,6 +35,7 @@ POI_WEIGHTS = {
 # Ces facteurs corrigent la part structurelle de trafic de transit sur les axes
 # désignés. Sources : comptages SPW 2021-2023 + ajustement au graphe local.
 NATIONAL_BC_BOOST = {
+    # ── OLLN (inchangé) ──────────────────────────────────────────────────────
     "N275": 3.5,   # Chaussée de Bruxelles - axe N-S majeur Ottignies
     "N233": 3.0,   # Bvd Baudouin 1er / Rue de Namur - axe principal LLN
     "N237": 2.5,   # Av Provinciale / Av des Combattants
@@ -42,6 +43,17 @@ NATIONAL_BC_BOOST = {
     "N250": 2.0,   # Boulevard de Lauzelle
     "N232": 1.5,   # Chaussée de la Croix / Av Reine Astrid
     "N238a": 1.5,  # Avenue de Masaya
+    # ── Wavre ────────────────────────────────────────────────────────────────
+    "N4":   3.5,   # Chaussée de Namur / Chaussée de Bruxelles (Bruxelles-Namur)
+    "N25":  3.0,   # Boulevard de l'Europe / Route de Nivelles (CSE-Wavre)
+    "N241": 2.0,   # Chaussée de Louvain (Wavre-Bruxelles via Chaumont)
+    "N257": 1.5,   # Avenue Pasteur / Rue de la Station (Wavre local)
+    # ── Rixensart / Lasne ────────────────────────────────────────────────────
+    "N253": 2.5,   # Chaussée de La Hulpe → Rixensart → Wavre
+    "N238": 2.0,   # Avenue de Ravenstein / Rixensart
+    # ── Court-Saint-Etienne ──────────────────────────────────────────────────
+    "N93":  2.5,   # Chaussée de Namur (CSE-Gembloux)
+    "N5":   2.0,   # Route de Philippeville (CSE direction Charleroi)
 }
 
 # ── Références AADT Belgique (véhicules/jour) ────────────────────────────────

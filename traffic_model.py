@@ -30,6 +30,20 @@ POI_WEIGHTS = {
     "sports_centre": 2, "leisure": 1,
 }
 
+# ── Boost de betweenness pour routes nationales (SPW Wallonie) ───────────────
+# Les routes nationales en bordure du graphe sont sous-estimées par betweenness.
+# Ces facteurs corrigent la part structurelle de trafic de transit sur les axes
+# désignés. Sources : comptages SPW 2021-2023 + ajustement au graphe local.
+NATIONAL_BC_BOOST = {
+    "N275": 3.5,   # Chaussée de Bruxelles - axe N-S majeur Ottignies
+    "N233": 3.0,   # Bvd Baudouin 1er / Rue de Namur - axe principal LLN
+    "N237": 2.5,   # Av Provinciale / Av des Combattants
+    "N239": 2.0,   # Avenue Albert 1er
+    "N250": 2.0,   # Boulevard de Lauzelle
+    "N232": 1.5,   # Chaussée de la Croix / Av Reine Astrid
+    "N238a": 1.5,  # Avenue de Masaya
+}
+
 # ── Références AADT Belgique (véhicules/jour) ────────────────────────────────
 # Sources : SPW Wallonie, comptages autoroutiers, littérature transport
 # Plafond = route la plus chargée de ce type en milieu semi-urbain wallon
@@ -232,8 +246,12 @@ def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None,
         type_bc_values[hw].append(((u, v, key), bc))
 
     if base_type_max_bc is None:
-        anchor = {hw: max((bc for _, bc in items), default=1e-9)
-                  for hw, items in type_bc_values.items()}
+        # 90th percentile par type : évite qu'un seul outlier écrase tout le type
+        anchor = {}
+        for hw, items in type_bc_values.items():
+            bcs = [bc for _, bc in items]
+            anchor[hw] = float(np.percentile(bcs, 90)) if bcs else 1e-9
+            anchor[hw] = max(anchor[hw], 1e-9)
     else:
         anchor = base_type_max_bc
 
@@ -247,13 +265,24 @@ def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None,
             edge_id  = f"{u}:{v}:{key}"
             tt       = (tomtom or {}).get(edge_id)
 
-            if tt:
-                aadt_max   = tt["aadt_max"]
-                congestion = tt.get("congestion", 1.0)
-                cong_factor = min(1.0 / max(congestion, 0.1), 2.0)
-                veh = int(min(bc_norm, 2.5) * aadt_max * cong_factor)
+            # Boost conditionnel pour routes nationales sous-estimées (bc_norm < 0.3)
+            # N'affecte que les routes en bordure de graphe, pas les axes déjà centraux
+            ref = G[u][v][key].get("ref", "")
+            if isinstance(ref, list): ref = ref[0] if ref else ""
+            boost = NATIONAL_BC_BOOST.get(str(ref), 1.0)
+            if boost > 1.0 and bc_norm < 0.30:
+                bc_norm_boosted = min(bc_norm * boost, 0.85)
             else:
-                veh = int(min(bc_norm, 2.5) * aadt_max_default)
+                bc_norm_boosted = min(bc_norm, 1.5)
+
+            if tt:
+                # Prendre le MAX entre OSM et TomTom : TomTom FRC peut sous-classer
+                aadt_max    = max(aadt_max_default, tt["aadt_max"])
+                congestion  = tt.get("congestion", 1.0)
+                cong_factor = min(1.0 / max(congestion, 0.1), 2.0)
+                veh = int(bc_norm_boosted * aadt_max * cong_factor)
+            else:
+                veh = int(bc_norm_boosted * aadt_max_default)
 
             betweenness_veh[(u, v, key)] = veh
 

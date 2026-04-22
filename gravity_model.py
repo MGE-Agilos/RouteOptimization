@@ -80,6 +80,15 @@ def _boundary_point(olln_lat, olln_lon, zone_lat, zone_lon, bbox, margin=0.08):
     return olln_lat + t * dlat, olln_lon + t * dlon
 
 
+# Overrides manuels : zones dont la projection automatique atterrit sur un nœud
+# incorrect (ex. Bruxelles arrive par N4/Chaussée de Bruxelles, pas par une rue
+# secondaire à l'est). Valeurs = ID OSM du vrai nœud d'entrée.
+GATEWAY_OVERRIDES = {
+    "Bruxelles": 1393865970,   # nœud le + au nord sur la Chaussée de Bruxelles (N4)
+    "La-Hulpe":  1393865962,   # nœud nord sur la Chaussée (trafic N253 → N4)
+}
+
+
 def find_gateway_nodes(G, zones=None):
     """Nœuds passerelles pour zones externes (projection directionnelle)."""
     import osmnx as ox
@@ -98,9 +107,13 @@ def find_gateway_nodes(G, zones=None):
     nearest = ox.nearest_nodes(G, X=query_lons, Y=query_lats)
     gateways = {}
     for name, node, bp_lat, bp_lon in zip(zones.keys(), nearest, query_lats, query_lons):
-        node_data = G.nodes[node]
-        dist = haversine_km(bp_lat, bp_lon, node_data["y"], node_data["x"])
-        print(f"  {name:28s} -> nœud {node} (dist={dist:.2f} km)")
+        if name in GATEWAY_OVERRIDES and GATEWAY_OVERRIDES[name] in G.nodes:
+            node = GATEWAY_OVERRIDES[name]
+            print(f"  {name:28s} -> nœud {node} (override manuel)")
+        else:
+            node_data = G.nodes[node]
+            dist = haversine_km(bp_lat, bp_lon, node_data["y"], node_data["x"])
+            print(f"  {name:28s} -> nœud {node} (dist={dist:.2f} km)")
         gateways[name] = node
 
     from collections import Counter

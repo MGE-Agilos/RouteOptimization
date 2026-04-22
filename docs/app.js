@@ -436,28 +436,74 @@ function computeStats(geojson) {
   };
 }
 
-function simulate() {
+const EDGE_FN_URL = "https://elbbnitdxahammsxoazw.supabase.co/functions/v1/simulate";
+
+async function simulate() {
   if (state.signs.length === 0) return;
-  showLoading("Simulation en cours…");
+  showLoading("Simulation en cours (modèle complet)…");
 
-  setTimeout(() => {
-    try {
-      state.simGeoJSON = simulateLocally();
-      state.simStats   = computeStats(state.simGeoJSON);
-      state.simDone    = true;
+  try {
+    const resp = await fetch(EDGE_FN_URL, {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify({ signs: state.signs }),
+    });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
 
-      setViewMode(state.viewMode === "current" ? "simulated" : state.viewMode);
-      updateStats();
-      renderSignMarkers();
-      document.getElementById("btn-simulate").disabled = true;
-      document.getElementById("view-modes").style.display = "flex";
-      showToast("Simulation terminée ✓", "success");
-    } catch (e) {
-      showToast("Erreur : " + e.message, "error");
-    } finally {
-      hideLoading();
+    // Index base pour récupérer géométries + calculer deltas
+    const baseVeh   = {}, baseScore = {};
+    for (const f of state.baseGeoJSON.features) {
+      baseVeh[f.properties.edge_id]   = f.properties.vehicles || 0;
+      baseScore[f.properties.edge_id] = f.properties.score    || 0;
     }
-  }, 300);
+    const simByEid = {};
+    for (const f of data.features) simByEid[f.edge_id] = f;
+
+    const features = state.baseGeoJSON.features.map(feat => {
+      const eid = feat.properties.edge_id;
+      const sim = simByEid[eid];
+      if (!sim) return feat;
+      return {
+        ...feat,
+        properties: {
+          ...feat.properties,
+          score:     sim.score,
+          vehicles:  sim.vehicles,
+          category:  sim.category,
+          closed:    sim.closed,
+          sign:      sim.sign,
+          delta:     Math.round((sim.score - (baseScore[eid] || 0)) * 10) / 10,
+          veh_delta: sim.vehicles - (baseVeh[eid] || 0),
+        },
+      };
+    });
+
+    state.simGeoJSON = { type: "FeatureCollection", features };
+    state.simStats   = data.stats;
+    state.simDone    = true;
+
+    _applySimResult("Simulation (modèle complet) terminée ✓");
+
+  } catch (e) {
+    console.warn("Edge Function indisponible, simulation locale :", e.message);
+    showToast("Connexion impossible — simulation approximative utilisée", "warning");
+    state.simGeoJSON = simulateLocally();
+    state.simStats   = computeStats(state.simGeoJSON);
+    state.simDone    = true;
+    _applySimResult("Simulation locale terminée");
+  } finally {
+    hideLoading();
+  }
+}
+
+function _applySimResult(msg) {
+  setViewMode(state.viewMode === "current" ? "simulated" : state.viewMode);
+  updateStats();
+  renderSignMarkers();
+  document.getElementById("btn-simulate").disabled = true;
+  document.getElementById("view-modes").style.display = "flex";
+  showToast(msg, "success");
 }
 
 function resetToBase() {

@@ -167,40 +167,36 @@ def od_scores(G, od_counts):
 
 # ── 3. Véhicules par betweenness intra-type (ancré sur la base) ─────────────
 
-def compute_vehicles(G, base_type_max_bc=None, k=200):
+def compute_vehicles(G, base_type_max_bc=None, k=200, tomtom=None):
     """
     Betweenness centrality intra-type → véhicules/jour.
 
-    Principes :
-      • Chaque type de route (tertiaire, secondaire…) est normalisé séparément.
-      • L'ancre (base_type_max_bc) est fixée au démarrage et ne change JAMAIS.
-        → Si un chemin est barré, sa betweenness tombe à 0 → 0 véhicules.
-        → Les routes voisines voient leur betweenness augmenter → plus de véhicules.
-      • Aucun plancher : une route inaccessible → 0.
+    Si tomtom est fourni ({edge_id: {frc, aadt_max, congestion, …}}),
+    l'AADT_MAX utilisé pour chaque segment est remplacé par la valeur
+    TomTom (basée sur le functionalRoadClass), plus précise qu'OSM.
+    Le facteur de congestion TomTom (currentSpeed/freeFlowSpeed) est
+    appliqué en inverse : moins de vitesse → plus de trafic.
 
     Args:
         G               : graphe (base ou modifié)
         base_type_max_bc: {hw: max_bc} calculé sur le graphe de base.
-                          None = mode base (on calcule et retourne l'ancre).
         k               : nb de sources pour l'approximation betweenness.
+        tomtom          : dict enrichissement TomTom ou None.
 
     Returns:
         vehicles        : {(u,v,key): int}
-        type_max_bc     : {hw: float}  (identique à base_type_max_bc si fourni)
+        type_max_bc     : {hw: float}
     """
     k_actual = min(k, G.number_of_nodes())
-    # normalized=False pour avoir des valeurs absolues stables entre graphes
-    edge_bc = nx.edge_betweenness_centrality(
+    edge_bc  = nx.edge_betweenness_centrality(
         G, normalized=False, weight="length", k=k_actual
     )
 
-    # Regrouper par type
     type_bc_values = defaultdict(list)
     for (u, v, key), bc in edge_bc.items():
         hw = _hw(G[u][v][key])
         type_bc_values[hw].append(((u, v, key), bc))
 
-    # Ancre : max absolu par type sur le graphe de BASE
     if base_type_max_bc is None:
         anchor = {hw: max((bc for _, bc in items), default=1e-9)
                   for hw, items in type_bc_values.items()}
@@ -210,14 +206,25 @@ def compute_vehicles(G, base_type_max_bc=None, k=200):
     vehicles = {}
     for hw, items in type_bc_values.items():
         hw_anchor = max(anchor.get(hw, 1e-9), 1e-9)
-        aadt_max  = AADT_MAX.get(hw, 1500)
+        aadt_max_default = AADT_MAX.get(hw, 1500)
+
         for (u, v, key), bc in items:
-            # bc_norm peut dépasser 1 en simulation (trafic concentré sur moins de routes)
-            bc_norm = bc / hw_anchor
-            veh = int(min(bc_norm, 2.5) * aadt_max)   # plafonné à 2.5× l'AADT max
+            bc_norm  = bc / hw_anchor
+            edge_id  = f"{u}:{v}:{key}"
+            tt       = (tomtom or {}).get(edge_id)
+
+            if tt:
+                # TomTom disponible : AADT_MAX basé sur FRC + facteur congestion
+                aadt_max   = tt["aadt_max"]
+                congestion = tt.get("congestion", 1.0)
+                # congestion < 1 = ralenti = plus de trafic → inverse
+                cong_factor = min(1.0 / max(congestion, 0.1), 2.0)
+                veh = int(min(bc_norm, 2.5) * aadt_max * cong_factor)
+            else:
+                veh = int(min(bc_norm, 2.5) * aadt_max_default)
+
             vehicles[(u, v, key)] = veh
 
-    # Routes non atteintes par betweenness (isolées) → 0
     for u, v, key in G.edges(keys=True):
         if (u, v, key) not in vehicles:
             vehicles[(u, v, key)] = 0

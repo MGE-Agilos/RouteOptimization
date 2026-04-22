@@ -20,6 +20,7 @@ from traffic_model import (
     od_scores,
     compute_vehicles,
 )
+from tomtom_enricher import load_enrichment
 
 warnings.filterwarnings("ignore")
 
@@ -184,7 +185,10 @@ def _startup():
     base_scores   = od_scores(G_original, od_counts)
 
     print("Véhicules (betweenness intra-type, k=300)...")
-    base_veh, base_type_max_bc = compute_vehicles(G_original, k=300)
+    tomtom = load_enrichment()
+    if tomtom:
+        print(f"  TomTom : {len(tomtom)} segments enrichis")
+    base_veh, base_type_max_bc = compute_vehicles(G_original, k=300, tomtom=tomtom or None)
 
     base_geojson = graph_to_geojson(G_original, base_scores, base_veh)
     base_stats   = compute_stats(base_geojson)
@@ -241,8 +245,10 @@ def simulate():
         od_mod, _ = simulate_od_traffic(G_mod, attractiveness, n_samples=1500)
         scores_mod = od_scores(G_mod, od_mod)
 
+        tomtom = load_enrichment()
         vehicles_mod, _ = compute_vehicles(
-            G_mod, base_type_max_bc=base_type_max_bc, k=150
+            G_mod, base_type_max_bc=base_type_max_bc, k=150,
+            tomtom=tomtom or None,
         )
 
         geojson_mod = graph_to_geojson(G_mod, scores_mod, vehicles_mod)

@@ -303,25 +303,53 @@ function simulateLocally() {
     };
   });
 
-  // Passe 1b : marquer les routes isolées (toutes leurs connexions sont fermées)
+  // Passe 1b : Union-Find pour détecter les routes coupées du réseau principal
+  const isolatedIds = new Set();
   if (state.adjacency) {
     const closedIds = new Set(state.signs.map(s => s.edge_id));
-    state.baseGeoJSON.features.forEach(feat => {
-      const eid = feat.properties.edge_id;
-      if (closedIds.has(eid)) return; // déjà fermée explicitement
-      const ownNeighbors = state.adjacency[eid] || [];
-      const hasOpenExit = ownNeighbors.some(nid => !closedIds.has(nid));
-      if (!hasOpenExit && ownNeighbors.length > 0) {
-        // Route coupée de tout le réseau : trafic = 0
-        const p = propMap[eid];
+    const allEdgeIds = state.baseGeoJSON.features.map(f => f.properties.edge_id);
+
+    // Union-Find sur les arêtes non-fermées
+    const parent = {};
+    allEdgeIds.forEach(eid => { if (!closedIds.has(eid)) parent[eid] = eid; });
+    function find(x) {
+      if (parent[x] !== x) parent[x] = find(parent[x]);
+      return parent[x];
+    }
+    allEdgeIds.forEach(eid => {
+      if (closedIds.has(eid)) return;
+      (state.adjacency[eid] || []).forEach(nid => {
+        if (!closedIds.has(nid) && parent[nid] !== undefined) {
+          const px = find(eid), py = find(nid);
+          if (px !== py) parent[px] = py;
+        }
+      });
+    });
+
+    // La plus grande composante connexe = réseau principal
+    const compSize = {};
+    allEdgeIds.forEach(eid => {
+      if (closedIds.has(eid)) return;
+      const root = find(eid);
+      compSize[root] = (compSize[root] || 0) + 1;
+    });
+    const maxSize = Math.max(...Object.values(compSize));
+    const mainRoot = Object.keys(compSize).find(r => compSize[r] === maxSize);
+
+    // Marquer comme isolées toutes les arêtes hors de la composante principale
+    allEdgeIds.forEach(eid => {
+      if (closedIds.has(eid)) return;
+      if (find(eid) !== mainRoot) {
+        isolatedIds.add(eid);
+        const feat = state.baseGeoJSON.features.find(f => f.properties.edge_id === eid);
         propMap[eid] = {
-          ...p,
+          ...(propMap[eid] || feat?.properties || {}),
           vehicles:  0,
           score:     0,
           category:  "Faible",
           closed:    true,
-          delta:     Math.round((0 - feat.properties.score) * 10) / 10,
-          veh_delta: -(feat.properties.vehicles || 0),
+          delta:     Math.round((0 - (feat?.properties.score || 0)) * 10) / 10,
+          veh_delta: -(feat?.properties.vehicles || 0),
         };
       }
     });
@@ -340,18 +368,8 @@ function simulateLocally() {
       const lostScore = base.properties.score    || 0;
       if (lostVeh === 0 && lostScore === 0) return;
 
-      // Collecter toutes les routes fermées (pour le test d'accessibilité)
-      const closedIds = new Set(state.signs.map(sg => sg.edge_id));
-
       const neighbors = (state.adjacency[s.edge_id] || [])
-        .filter(nid => {
-          if (propMap[nid]?.closed) return false;
-          // Vérifier que la route voisine a au moins une connexion ouverte :
-          // si tous ses propres voisins sont fermés, elle est isolée du réseau.
-          const ownNeighbors = state.adjacency[nid] || [];
-          const hasOpenExit = ownNeighbors.some(nnid => !closedIds.has(nnid));
-          return hasOpenExit;
-        });
+        .filter(nid => !propMap[nid]?.closed && !isolatedIds.has(nid));
 
       if (neighbors.length === 0) return;
 

@@ -1,0 +1,7450 @@
+{
+  "144959:267816808:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "144959:144970:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 116,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "144970:144973:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 116,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "144973:13232234346:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 68,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "28323331:144970:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 76,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453627:2034525114:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453627:69914871:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.786,
+    "confidence": 0.890812
+  },
+  "50453644:1390312492:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.786,
+    "confidence": 0.890812
+  },
+  "50453644:1684784420:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453666:1952543693:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453666:268625657:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453676:1622778747:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453676:1952543693:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453698:1622778498:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453698:1622778747:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453704:1955243299:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453704:50453708:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453708:50453711:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.99
+  },
+  "50453711:267724982:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453711:50453714:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.99
+  },
+  "50453714:50453716:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.99
+  },
+  "50453716:69920452:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 0.667,
+    "confidence": 0.99
+  },
+  "50453716:1738415427:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.99
+  },
+  "50453748:2050070000:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453757:267816845:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453762:267099684:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453771:11238199792:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453771:50453773:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453773:50453775:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453775:358545328:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "50453775:7964945936:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172308:60172310:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172308:60172336:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172310:60172342:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172321:60172323:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172323:60302877:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172323:309184569:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172328:60172342:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172328:60172336:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172336:50453771:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172342:60172321:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172359:60172308:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172366:420277956:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60172386:5166967868:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60284026:248764712:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.816,
+    "confidence": 1
+  },
+  "60284026:1460205519:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.816,
+    "confidence": 1
+  },
+  "60284032:401298371:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "60284032:2406888240:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.816,
+    "confidence": 1
+  },
+  "60284032:401298379:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60284042:2142294569:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "60284042:307855234:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "60284185:60284187:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60284185:1559424992:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60284187:60284185:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60284187:1460205476:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286013:11622091152:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.795,
+    "confidence": 0.975677
+  },
+  "60286013:13283040204:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.8,
+    "confidence": 0.952188
+  },
+  "60286013:1668815912:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286144:309182631:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286144:60286154:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 76,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286154:268824958:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 79,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286173:5313722266:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 86,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286192:297605302:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286202:268825143:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286202:60286209:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286209:60286216:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286216:1445200688:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286216:420278003:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286261:66832842:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286261:60286262:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286261:558702331:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286262:60286263:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286262:60286261:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286263:60286264:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286263:60286262:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286264:1559424997:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286264:60286263:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286268:1558149508:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286268:6553661166:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286274:6553661166:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286274:560616782:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286277:309182631:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60286277:309183542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60302653:267816804:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60302877:1679686290:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60720357:248764665:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "60720357:324717533:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.865,
+    "confidence": 1
+  },
+  "60720373:60286251:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66832842:60286261:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66832842:66832847:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66832847:66832842:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66844614:66858325:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66844614:530559947:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66844614:401298398:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66844614:309249328:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 0.833,
+    "confidence": 0.978197
+  },
+  "66848469:13120732677:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66848469:305804578:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66848471:307678283:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848471:401303926:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848477:1742618127:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848477:307677883:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848503:4960256896:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848503:309174857:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848505:401298408:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66848505:305514704:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66855859:307676155:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66855859:6677687747:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855860:4341082521:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855860:3376501301:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66855862:323064365:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.808968
+  },
+  "66855862:66855877:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855862:4341082521:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855877:4530467568:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855877:66855862:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855878:307677895:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855878:4530467568:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.995596
+  },
+  "66855878:4530467567:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858315:309250830:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858315:1234167881:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858320:66858323:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858320:307854932:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858320:309785197:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858323:66858325:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858323:66858320:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858325:66844614:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "66858325:66858323:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69914867:297605226:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69914867:309185459:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69914867:268825180:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69914871:297605226:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69914871:50453627:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.786,
+    "confidence": 0.890812
+  },
+  "69916475:1260721062:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69920452:1622778593:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.986536
+  },
+  "69928988:358545323:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "69928988:1679686305:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "113622032:2023057553:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "113622032:457714387:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.986536
+  },
+  "113622032:1390304303:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.81,
+    "confidence": 0.989402
+  },
+  "248764095:60286251:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764172:248764212:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764172:248764324:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764202:1668815921:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.8,
+    "confidence": 0.950266
+  },
+  "248764202:248764209:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764209:248764202:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.8,
+    "confidence": 0.950266
+  },
+  "248764209:248764210:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764210:248764212:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764210:248764211:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764210:248764209:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764212:248764210:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764212:248764172:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764213:248764212:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.773,
+    "confidence": 0.974892
+  },
+  "248764324:13049550255:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.978806
+  },
+  "248764324:248764172:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.978806
+  },
+  "248764373:1389846243:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764373:457520120:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.978806
+  },
+  "248764373:309181300:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.978806
+  },
+  "248764423:1389846243:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764442:248764444:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 56,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764444:248764423:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764444:300060725:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 56,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764503:248764529:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 56,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764503:300060725:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764515:248764442:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 56,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764515:248764533:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 84,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764529:248764533:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764529:60720373:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 56,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764533:60286144:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 76,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764662:4773664724:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764662:4773664721:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.868,
+    "confidence": 1
+  },
+  "248764664:60720357:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.868,
+    "confidence": 1
+  },
+  "248764664:248764665:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764665:544538883:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "248764712:248764662:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.868,
+    "confidence": 1
+  },
+  "251426909:251427072:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "251427070:297576846:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "251427070:251427071:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "251427071:251427072:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "251427071:251427070:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "251427072:251426909:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "251427072:251427071:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.767575
+  },
+  "267099501:2034369740:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.914435
+  },
+  "267099501:2034369746:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.914435
+  },
+  "267099501:267724978:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.914435
+  },
+  "267099510:2034369740:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099510:267099513:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099510:267099513:1": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099510:267818686:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099513:1523293627:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099513:267099510:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099513:267099510:1": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099513:2034369746:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267099684:267857531:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.786,
+    "confidence": 0.991134
+  },
+  "267099684:50453748:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267724978:2429675862:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.833,
+    "confidence": 0.99
+  },
+  "267724978:2536397955:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.914435
+  },
+  "267724978:267099501:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.914435
+  },
+  "267724981:267857534:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.786,
+    "confidence": 0.991134
+  },
+  "267724981:50453748:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.833,
+    "confidence": 0.99
+  },
+  "267724982:50453714:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267724982:2404725875:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267725011:439559561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267725011:271185556:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816789:267816791:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816791:268653154:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816791:267816793:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816793:267816795:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816795:267816797:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816795:5487109454:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816797:267816800:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816800:60172386:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816800:358545311:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816802:267816789:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816802:358545314:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816804:60172359:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 0.774,
+    "confidence": 1
+  },
+  "267816804:4243352141:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816808:6286881685:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816808:4243352142:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816845:439559784:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816845:50453762:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816846:2162610604:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267816850:1523293640:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267818686:267099510:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267818686:1617088181:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267818686:2404725865:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267818686:2429675862:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.786,
+    "confidence": 0.991134
+  },
+  "267822365:267822395:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267822393:3626120067:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267822393:267822395:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267822395:267822365:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267822395:267822393:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267822395:292125317:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854426:267854999:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854426:50453676:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854863:356179420:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854963:267854999:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854963:267854863:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854999:267854426:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267854999:267854863:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267857531:267857534:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.987659
+  },
+  "267857534:8867944080:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.987659
+  },
+  "267857534:267857797:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267857541:2064775237:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.997601
+  },
+  "267857541:267857542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.987659
+  },
+  "267857542:267857814:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.987659
+  },
+  "267857547:267857550:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.997601
+  },
+  "267857550:8804283839:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.997601
+  },
+  "267857550:2026720278:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 26,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267857797:1622722161:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267857797:8867944080:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.914435
+  },
+  "267857814:457354366:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.987659
+  },
+  "267857814:267857547:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267857827:267857531:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267857827:50453762:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860080:4770267950:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860080:4770267927:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860080:459806037:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860085:267860091:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860085:460453004:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860091:267860085:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267860091:461138652:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267867803:2023057553:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.987659
+  },
+  "267868666:267868667:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868666:60172366:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868667:267868917:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868671:358545317:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868673:267868666:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868913:267868994:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868917:267868913:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 26,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868917:267868671:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868994:267868913:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 26,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "267868994:267868671:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622506:1363340076:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622509:268622510:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622510:268622511:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622511:268622512:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622512:2113101321:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622512:268622514:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 26,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622514:268622516:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622516:268622506:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268622516:1423132706:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268625657:50453666:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268625657:1390312548:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.821,
+    "confidence": 0.890812
+  },
+  "268653154:267816793:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268653154:268653159:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268653159:4768274992:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268653159:268653154:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268824856:309185315:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 79,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268824958:268825143:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268824958:268824856:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 79,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268824991:5078635442:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 24,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268824991:309184621:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825143:268824991:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825180:4306116935:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 79,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825180:69914867:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825180:268825222:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825222:268825180:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825428:60286209:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "268825428:268824856:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185556:446745611:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185556:1523293848:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185556:267725011:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185678:50453757:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185678:2734952230:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185701:4842372644:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "271185701:5509488351:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292125317:267822395:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292128947:292128953:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292128953:292129271:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292129012:301490102:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292129012:2597913144:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292129271:292128953:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292129271:558596306:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292129271:558596561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292704647:292704761:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292704647:9776894552:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292704761:292704647:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292704761:305510844:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292705369:305510034:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "292705369:305512137:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "297576701:321608651:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.808968
+  },
+  "297576846:251427070:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.791713
+  },
+  "297576846:309293264:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.791713
+  },
+  "297605226:69914867:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "297605226:297605302:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "297605226:69914871:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.821,
+    "confidence": 0.890812
+  },
+  "297605302:60286202:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "300060717:248764423:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "300060717:1389846285:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "300060720:987527857:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "300060720:300060722:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "300060722:248764503:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "300060725:300060717:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "301490102:292129012:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "301490102:2394814912:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "301490106:1932354832:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "301490106:2394814913:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305510034:292705369:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305510034:305510042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305510042:309179503:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305510042:305510034:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305510844:292704761:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305510844:1668815912:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512074:305512137:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 40,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512074:4327791717:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512137:9776894552:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512137:305512074:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 40,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512137:292705369:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512316:9695453436:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512516:4327791716:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512551:1725296694:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512551:305512555:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512555:13052222511:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512555:305512551:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512774:305514268:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305512774:5557072044:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305514268:1725336226:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305514268:305512774:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305514704:66848505:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305514704:4960256896:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305515448:13052222511:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305515448:4327791716:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516071:2121526520:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516071:309179503:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516071:307849413:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.992809
+  },
+  "305516087:305516090:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516087:307849249:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516090:13081320253:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516090:305516087:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305516093:13081320257:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.992809
+  },
+  "305534900:305804889:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305803471:13120732672:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305803471:13120732658:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305803471:13120732671:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "305804578:66848469:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.992809
+  },
+  "305804578:13081320257:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.992809
+  },
+  "305804889:305534900:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307673832:309293324:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307675986:4348461776:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307675986:307676155:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307675986:307676228:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676155:307675986:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676155:66855859:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676157:307676155:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676166:307676752:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676166:309257084:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676228:307676157:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.992809
+  },
+  "307676228:4348461777:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676228:307675986:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676752:307676166:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307676752:4348461781:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677695:307677702:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.808968
+  },
+  "307677695:307679246:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.808968
+  },
+  "307677695:307679219:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677702:4530467567:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677702:307677695:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.808968
+  },
+  "307677702:66855877:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677883:66848477:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677883:4339833195:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677895:2121547557:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307677895:66855878:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678261:307678269:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678261:307678313:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678261:307678648:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678269:307678261:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678269:307850180:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678269:4621831579:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678283:66848471:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678283:401303927:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678283:66848469:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678313:307678261:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307678648:307678261:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307679217:307679219:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307679219:307679246:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307679219:307677695:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.808968
+  },
+  "307679219:307679217:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307679246:307677695:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307679246:307679219:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307679246:13120732671:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307771098:307851407:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307771098:309174852:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307849249:305516087:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307849249:2121526520:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307849413:305516071:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850180:401303927:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850180:307678269:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850180:307850641:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850638:307850662:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850638:307850640:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850638:4339833195:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850640:307850638:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850640:307850641:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850641:307850180:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850641:307850640:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850662:4339833195:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850662:307851407:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307850662:307850638:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307851407:307771098:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307851407:307850662:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307854932:66858320:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307855234:60284042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "307855234:1745656788:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307855234:307856036:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307855234:1460245250:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "307856036:307855234:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307856036:308125318:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307857298:1121648331:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 0.794,
+    "confidence": 0.97
+  },
+  "307857871:11159055269:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307857871:307858005:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307857992:1932354929:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307857992:307857991:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307857992:384794167:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307858005:1932354929:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "307858005:307857871:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "308124739:4406911113:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "308124739:2406888240:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "308124746:1460205519:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.842,
+    "confidence": 1
+  },
+  "308124746:2406888240:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "308125318:307856036:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "308125318:384794167:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174851:309174852:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174852:307771098:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174852:1406515847:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174855:309174857:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174857:66848503:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174857:309174858:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309174858:309174851:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309179360:9695453436:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309179503:305516071:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309179503:305510042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309181300:13049550255:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.727,
+    "confidence": 0.974657
+  },
+  "309181300:248764373:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.727,
+    "confidence": 0.974657
+  },
+  "309182631:560616778:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183116:560616777:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183121:435615042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183121:309183123:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183123:560616782:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183123:60286274:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183542:60286154:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309183542:1445200688:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309184569:267854963:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309184621:462741066:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309184621:462741066:1": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309184630:60302877:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309184630:309184569:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309185315:309185459:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309185315:60286173:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 86,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309185459:1260721062:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309185459:69914867:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309248030:309248049:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.756,
+    "confidence": 0.957351
+  },
+  "309248030:457520120:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.727,
+    "confidence": 0.974657
+  },
+  "309248049:309248030:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.727,
+    "confidence": 0.974657
+  },
+  "309248049:2400526735:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.756,
+    "confidence": 0.957351
+  },
+  "309248915:6509979437:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309248915:309249328:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309249315:9979379462:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309249328:309248915:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309249328:5758313632:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309249328:66844614:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 0.833,
+    "confidence": 0.978197
+  },
+  "309249550:1725296554:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309249550:1725336226:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309250830:66858315:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309250830:309251769:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309251769:309250830:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309251769:309785208:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309255871:309257084:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309257084:309785213:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309257084:309255871:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309257084:307676166:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309293248:309293324:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309293264:297576846:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.791713
+  },
+  "309293264:1489880359:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.791713
+  },
+  "309293324:309293248:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309293324:307673832:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309293324:4348461776:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309293754:3376436508:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.842,
+    "confidence": 1
+  },
+  "309293754:2142294569:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 1
+  },
+  "309785197:309785207:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309785197:66858320:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "309785207:309785208:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.9808
+  },
+  "309785207:309785211:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.9808
+  },
+  "309785208:309785207:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.9808
+  },
+  "309785208:309251769:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309785211:1745656788:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309785211:309785197:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309785213:1234167881:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "309785213:309257084:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981629
+  },
+  "321608651:297576701:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.93,
+    "confidence": 0.815943
+  },
+  "323064365:66855862:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717533:324717549:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717533:60720357:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717542:987527918:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717542:324934568:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717547:300060722:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717547:987527857:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 27,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717549:324717542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717551:324717533:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324717551:324717549:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324934568:558597006:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "324934568:987527918:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "332027773:1622722728:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "337693263:4773664724:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "337693263:337693573:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "337693378:457909911:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "337693573:457909945:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "348379670:420278001:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "348379670:60286277:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "356179420:60172328:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "356179420:60172321:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545309:358545314:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545309:358545311:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545311:267816802:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545314:476265124:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 0.409,
+    "confidence": 1
+  },
+  "358545317:267868673:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 27,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545317:1623590133:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545323:268622509:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545328:60302653:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "358545341:439559582:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "384794167:307857992:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.9808
+  },
+  "384794167:308125318:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.9808
+  },
+  "401298371:60284032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298371:1459833475:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "401298379:60284032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298379:401298398:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298398:401298379:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298398:66844614:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298404:530559947:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298408:401298404:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401298408:66848505:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401303926:1742618127:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401303926:66848471:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401303926:401303927:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401303927:307678283:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "401303927:307850180:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.934,
+    "confidence": 0.991265
+  },
+  "401303927:401303926:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "420277956:348379670:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "420277956:420278001:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 40,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "420278001:420278003:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 65,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "420278003:1589576880:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "433046755:476264803:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "433046755:1422896770:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "435615023:435615042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "435615042:435615023:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "435615042:309183121:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "435615042:1082714118:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559561:439559572:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559572:267816846:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559572:358545341:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 30,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559582:1523293627:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559582:1523293700:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559587:267816850:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.781,
+    "confidence": 0.99
+  },
+  "439559768:267857827:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439559784:7460912608:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439560036:1622722161:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 30,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "439560036:459806037:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "446745611:1399555142:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "446745611:271185556:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457354365:1738415427:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457354365:69920452:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "457354366:457354365:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "457520120:248764373:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.767,
+    "confidence": 0.975268
+  },
+  "457520120:309248030:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.767,
+    "confidence": 0.975268
+  },
+  "457714387:113622032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "457714387:2064775914:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457909911:1559425007:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457909911:1560676880:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457909926:337693263:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457909926:337693573:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457909945:1559424992:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "457909945:337693378:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "459495223:4770267927:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "459806037:439560036:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "459806037:267860080:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "460453004:4770267950:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "460453004:267860085:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "461138652:1746997945:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "461138652:267860091:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "462741066:309184630:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "476264800:5166967868:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "476264800:476264803:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "476264803:433046755:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "476264803:476264800:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "476265124:60172310:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "476265124:60172359:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.667,
+    "confidence": 1
+  },
+  "530559947:401298408:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "530559947:66844614:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "544538883:60284026:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "544538883:248764712:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "558596306:292129271:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "558596561:292129271:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "558596561:11640482154:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "558597006:324934568:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "558702331:60286261:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "558702331:1559425007:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "560616777:560616778:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 23,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "560616777:309183542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "560616778:309183121:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "560616782:13137823513:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "604275610:604275619:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "604275614:60286192:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 59,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "604275614:1560701690:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "604275619:2405429737:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "604275628:5798340241:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "651950264:2429675862:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "987527857:324717551:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "987527918:324717547:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1082714118:435615042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1097809811:4348461777:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1100151369:1994215907:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1100151369:267868673:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1105578597:1105578656:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1105578647:1105578597:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1105578647:6509979441:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1105578652:10759931478:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1105578656:5557072044:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1105578656:2052623999:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1121648331:307857298:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 0.794,
+    "confidence": 0.97
+  },
+  "1145490308:5078635442:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1190170582:6397292546:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 25,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167802:6509979437:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167802:1234167943:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167823:1234167902:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167841:6509979441:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167841:1234167915:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167881:66858315:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "1234167881:309785213:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.878,
+    "confidence": 0.979453
+  },
+  "1234167902:1234167841:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167910:1234167802:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "1234167915:1234167910:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1234167943:1234167823:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1260721062:69916475:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1260721062:309185459:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1329743392:1754797919:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1363340075:1100151369:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1363340076:1363340075:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1363340076:268622509:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1389846243:248764373:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1389846243:1389846285:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1389846285:300060720:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390304293:2064775914:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1390304303:1390304304:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1390304303:1622722161:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1390304303:113622032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1390304304:1390304303:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1390312483:50453644:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.821,
+    "confidence": 0.896219
+  },
+  "1390312483:1390312492:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312486:1390312548:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312486:1390312542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312492:1390312486:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 0.821,
+    "confidence": 0.896219
+  },
+  "1390312518:1390312549:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312542:1390312518:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312548:1390312542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312548:268625657:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1390312549:1390312483:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1399530243:1460205379:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 0.794,
+    "confidence": 0.97
+  },
+  "1399555142:446745611:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1399555142:1523293848:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1406515847:309174855:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1422896757:1422896770:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1422896770:1422896757:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1422896770:2121073908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1422896770:433046755:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1423132706:1998401551:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1445200688:348379670:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1445200688:1445200697:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1445200697:267868667:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1459833475:401298371:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "1459833475:1460245250:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205379:1399530243:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 0.794,
+    "confidence": 0.97
+  },
+  "1460205450:1460205454:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205454:1460205462:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205460:1460205450:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205462:60284187:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205462:1460205476:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205465:1558088206:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205465:1460205460:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205476:1460205465:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205519:308124746:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205519:60284026:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1460205519:2247286698:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "1460245250:307855234:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "1460245250:1459833475:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1489880359:309293264:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.790538
+  },
+  "1489880359:4341082517:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.829,
+    "confidence": 0.790538
+  },
+  "1523293627:267099513:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293627:1523293700:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293640:267725011:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293640:439559561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293700:439559587:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293848:1399555142:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293848:1523294956:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523293848:271185556:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523294956:8051764791:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 116,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523294956:4842372648:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 116,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1523294956:1523293848:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558088206:4406911113:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558088206:1460205460:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149503:60286268:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149503:1558149508:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149504:2052591103:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149508:1558149511:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149511:1558149516:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149516:1558151846:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149518:1558151840:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558149518:1559424997:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558151840:1558149504:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558151846:1558149518:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1558151846:1558151840:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1559424992:60284185:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1559424992:337693378:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1559424997:1558149518:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1559424997:60286264:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1559425007:1560676880:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1559425007:558702331:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1560676880:457909926:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1560701690:604275610:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 0.828,
+    "confidence": 0.6
+  },
+  "1567287032:1668815950:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 27,
+    "congestion": 0.593,
+    "confidence": 0.99
+  },
+  "1567287056:1668815949:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1589576878:248764442:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1589576878:248764444:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1589576880:1589576878:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 55,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1589576880:60720373:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1617088181:267818686:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1617088181:2375290338:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622722161:267857797:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.863982
+  },
+  "1622722161:439560036:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622722161:1390304303:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1622722728:332027773:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622722728:1622722829:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622722829:1622722728:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622778498:50453704:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1622778593:50453698:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622778593:1622778498:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1622778747:50453698:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1622778747:267854426:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1623590133:1994215907:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1623590133:1994215908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1668815912:305510844:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1668815912:1668815921:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 26,
+    "congestion": 0.808,
+    "confidence": 0.97
+  },
+  "1668815912:11622091152:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1668815921:11622091152:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.971229
+  },
+  "1668815921:248764202:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.756,
+    "confidence": 0.952598
+  },
+  "1668815949:1567287056:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 27,
+    "congestion": 0.593,
+    "confidence": 0.99
+  },
+  "1668815950:1567287032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1679686288:6397292537:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1679686290:1679686288:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1679686290:1679686305:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1679686305:69928988:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 35,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1679686305:1679686288:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1684784417:1684784420:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1684784417:2695119141:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1684784420:50453644:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1684784420:1684784417:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725296554:1725296694:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725296554:309249550:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725296694:305512551:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725296694:1725296554:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725296790:4329033522:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725336226:305514268:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1725336226:309249550:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1727183265:1747150974:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1727559012:1727559016:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1727559016:1727559012:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1738415427:267857547:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1742618127:66848477:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1742618127:401303926:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1745656788:309785211:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "1745656788:307855234:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "1746997945:459495223:1": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1747150974:1747150975:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1747150974:1727183265:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1747150974:1747150986:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1747150975:1747150974:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1747150986:1747150974:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1754797919:1329743392:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1932354832:11159055269:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "1932354832:301490106:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "1932354929:307857992:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "1932354929:307858005:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "1952543693:50453676:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1952543693:50453666:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1955243299:604275628:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "1994215907:358545323:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1994215907:1994215908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1994215908:69928988:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 36,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401541:1363340075:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401541:268622506:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401551:2121073895:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401551:1998401541:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401561:2121073895:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401561:2121073919:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401561:2121073908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401571:1423132706:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "1998401571:268622514:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2023057553:2022877311:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "2023057553:113622032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "2026720278:267857541:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "2034369740:267099510:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034369740:267099501:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.863982
+  },
+  "2034369740:2034369746:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.863982
+  },
+  "2034369746:267099501:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.863982
+  },
+  "2034369746:267099513:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034369746:2034369740:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 0.656,
+    "confidence": 0.863982
+  },
+  "2034508446:2034508493:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034508446:2695119141:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034508493:2034508446:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034508493:2034525114:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034525114:2034508493:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2034525114:50453627:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2050070000:267816846:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2050070000:358545341:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 46,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2052591103:1558149503:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2052623999:1105578652:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2064775237:2064775914:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.99
+  },
+  "2064775237:267857542:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.99
+  },
+  "2064775914:2064775237:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "2064775914:457714387:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "2064775914:1390304293:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "2113101321:2113101324:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2113101324:358545309:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073895:1998401561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073895:1998401551:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073895:2121073908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073908:2121073895:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073908:1998401561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 75,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073908:1422896770:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073919:1998401561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121073919:433046755:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121526520:305516071:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121526520:307849249:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121547557:2121547558:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121547557:307677895:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121547558:2121547557:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2121547558:4621831908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2142294569:309293754:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2142294569:60284042:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "2162610604:271185678:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2162610604:50453757:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 57,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2247286698:1460205519:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "2375290338:1617088181:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2394814901:2394814906:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "2394814906:2394814912:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "2394814906:301490102:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "2394814912:2394814917:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "2394814913:10902715192:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "2394814917:301490106:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "2394814917:2394814913:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "2400526735:309248049:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.778,
+    "confidence": 0.955467
+  },
+  "2404725865:267818686:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2404725865:2404725875:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2404725865:2404725875:1": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2404725875:2404725865:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2404725875:2404725865:1": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2404725875:267724982:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2405429737:1955243299:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2405429737:11537561461:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.99
+  },
+  "2406888240:60284032:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2406888240:308124739:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2406888240:308124746:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 38,
+    "congestion": 0.789,
+    "confidence": 1
+  },
+  "2429675862:651950264:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.99
+  },
+  "2429675862:267724978:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.854,
+    "confidence": 0.99
+  },
+  "2429675862:267818686:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.929,
+    "confidence": 0.906662
+  },
+  "2536397955:267724981:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 32,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2536397955:267724978:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 0.636,
+    "confidence": 0.863982
+  },
+  "2597913144:292129012:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981079
+  },
+  "2695119141:1684784417:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2695119141:2034508446:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 28,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2734952230:271185678:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "2734952230:4842372649:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376436508:3376436509:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376436508:309293754:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376436509:3376436508:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376501298:3376501309:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376501301:3376501315:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376501307:3376501317:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "3376501307:4348461781:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "3376501309:66855859:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376501309:6677687747:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3376501315:3376501298:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.878,
+    "confidence": 0.793699
+  },
+  "3376501315:4341082517:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.929,
+    "confidence": 0.814405
+  },
+  "3376501317:6677615327:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "3626120067:60172386:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "3626120067:267816797:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 66,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4243352141:267816789:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.814,
+    "confidence": 1
+  },
+  "4243352142:4243352141:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4243352142:60302653:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4306116935:268825180:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 79,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4327791716:4327791717:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4327791716:305515448:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4327791717:305512074:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4327791717:305512516:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4329033522:1725296790:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4339833195:307850662:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4339833195:307677883:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4339833195:307850638:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4341082517:1489880359:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.878,
+    "confidence": 0.793699
+  },
+  "4341082517:3376501298:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 0.878,
+    "confidence": 0.793699
+  },
+  "4341082521:66855860:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4341082521:66855862:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "4341082521:4341082526:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4341082526:4341082521:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4348461776:4348461777:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4348461776:309293324:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4348461777:307676228:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4348461777:1097809811:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "4348461781:3376501317:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981576
+  },
+  "4348461781:307676752:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.981576
+  },
+  "4406911113:308124739:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4406911113:1558088206:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4530467567:307677702:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4530467567:66855878:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4530467568:66855877:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4530467568:4530467567:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "4530467568:66855878:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "4621831442:11878810437:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4621831579:307678269:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "4621831908:13120732678:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.902,
+    "confidence": 0.992518
+  },
+  "4621831908:2121547558:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4768272506:268653159:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4768274992:268653159:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 55,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4768274992:4768272507:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4768274992:12177427173:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 64,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4770267927:267860080:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4770267950:460453004:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4770267950:267860080:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 29,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4773664721:248764664:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4773664724:337693263:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4773664724:4773664721:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 39,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372639:271185701:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372644:4842372652:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372648:1523294956:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 116,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372648:4842372639:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372649:4842372648:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 47,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372652:4842372649:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4842372652:2734952230:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4960256896:66848503:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "4960256896:305514704:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5078635431:268825428:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5078635431:268824991:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 51,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5078635442:5078635431:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5166967868:2113101321:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5166967868:476264800:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5166967868:1998401571:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5509488351:4842372644:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 48,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5557072036:1105578647:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5557072036:1105578597:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5557072044:305512774:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5557072044:2052623999:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5758313632:8553508055:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5758313632:9979379462:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5758313632:309249328:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "5798340241:604275614:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "6286881685:4321543318:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 55,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6397292537:1145490308:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6397292537:6397292546:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 25,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6397292546:1190170582:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 25,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6397292546:1145490308:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 25,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6509979437:1234167943:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6509979437:309248915:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6509979441:1105578647:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6509979441:1234167915:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6553661166:60286274:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6553661166:60286268:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6677615327:66855860:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "6677615327:3376501301:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 30,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "6677687747:3376501307:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "7460912608:50453773:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "7460912608:7964945939:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "7964945936:28323331:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 54,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "7964945939:7964945936:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 52,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "8051764791:1523294956:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 116,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "8265536299:358545328:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 55,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "8265536299:6286881685:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 55,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "8553508055:5758313632:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "8804283839:267724981:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.997601
+  },
+  "8804283839:2536397955:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 0.545,
+    "confidence": 0.901593
+  },
+  "8867944080:8804283839:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.997601
+  },
+  "8867944080:2026720278:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.791,
+    "confidence": 0.990648
+  },
+  "9695453436:9695453437:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "9695453436:309179360:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "9695453436:305512316:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "9695453437:9695453436:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "9776894552:305512137:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 0.967467
+  },
+  "9776894552:292704647:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 0.967467
+  },
+  "9979379462:5758313632:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 31,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "10108244473:10108244490:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.982126
+  },
+  "10108244490:10108244473:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.982126
+  },
+  "10759931478:5557072036:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "10902715192:2394814901:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 0.86,
+    "confidence": 0.982126
+  },
+  "11159055269:307857871:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "11159055269:1932354832:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.979453
+  },
+  "11238199792:439559768:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 60,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "11537561461:50453708:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 42,
+    "congestion": 0.857,
+    "confidence": 0.997601
+  },
+  "11622091152:60286013:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "11622091152:1668815921:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 45,
+    "congestion": 0.778,
+    "confidence": 0.954009
+  },
+  "11640482154:558596561:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "11640482154:2119413983:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "11640486501:11640482154:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 33,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "11683980758:7964945939:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 58,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "11878810437:4621831442:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "12177427173:4768274992:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 55,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13049550255:248764324:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13049550255:309181300:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13052222511:305515448:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13052222511:305512555:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 34,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13081320253:305516090:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 0.967467
+  },
+  "13081320253:305516093:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13081320257:305516093:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "13081320257:305804578:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13081320257:13081320253:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 37,
+    "congestion": 0.838,
+    "confidence": 0.967467
+  },
+  "13120732658:305803471:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732658:13120732671:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732671:305803471:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732671:307679246:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732671:13120732658:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732672:305803471:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732672:4621831908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732677:66848469:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "13120732677:13120732678:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "13120732677:13120732672:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13120732678:13120732677:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "13120732678:4621831908:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 61,
+    "congestion": 0.885,
+    "confidence": 0.992519
+  },
+  "13120732678:66848471:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 41,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13137823513:309183116:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 43,
+    "congestion": 1.0,
+    "confidence": 1
+  },
+  "13283040204:60286013:0": {
+    "frc": "FRC4",
+    "aadt_max": 5000,
+    "freeflow_speed": 44,
+    "congestion": 1.0,
+    "confidence": 1
+  }
+}

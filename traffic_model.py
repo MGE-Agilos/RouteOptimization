@@ -147,22 +147,22 @@ def simulate_od_traffic(G, attractiveness, n_samples=3000, seed=42):
     return edge_counts, hits
 
 
-def od_scores(G, od_counts):
-    """Score 0-100 à partir des comptes OD (normalisation globale)."""
-    max_od = max(od_counts.values(), default=1)
-    scores = {}
-    for u, v, k, data in G.edges(keys=True, data=True):
-        od     = od_counts.get((u, v, k), 0)
-        hw     = _hw(data)
-        hw_w   = HIGHWAY_WEIGHTS.get(hw, 0.2)
-        lanes  = data.get("lanes", 1)
-        if isinstance(lanes, list): lanes = lanes[0]
-        try:    lanes = max(1, min(int(lanes), 4))
-        except: lanes = 1
-        od_norm = od / max_od if max_od > 0 else 0
-        score   = (0.70 * od_norm + 0.20 * hw_w + 0.10 / lanes) * 100
-        scores[(u, v, k)] = min(100.0, round(score, 1))
-    return scores
+def vehicle_scores(vehicles, scale=100):
+    """
+    Score 0-100 basé uniquement sur le nombre de véhicules/jour.
+
+    score = min(100, vehicles / scale)
+
+    Avec scale=100 (défaut) :
+      Critique (≥ 65) → ≥ 6 500 veh/jour
+      Élevé    (≥ 40) → ≥ 4 000 veh/jour
+      Modéré   (≥ 20) → ≥ 2 000 veh/jour
+      Faible   (< 20) →  < 2 000 veh/jour
+    """
+    return {
+        edge_id: min(100.0, round(veh / scale, 1))
+        for edge_id, veh in vehicles.items()
+    }
 
 
 # ── 3. Véhicules par betweenness intra-type (ancré sur la base) ─────────────

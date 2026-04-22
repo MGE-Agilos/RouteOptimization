@@ -16,12 +16,10 @@ from shapely.geometry import LineString
 
 from traffic_model import (
     load_poi_attractiveness,
-    simulate_od_traffic,
-    od_scores,
+    vehicle_scores,
     compute_vehicles,
 )
 from tomtom_enricher import load_enrichment
-from gravity_model import find_gateway_nodes, gravity_trips, EXTERNAL_ZONES
 
 warnings.filterwarnings("ignore")
 
@@ -184,23 +182,12 @@ def _startup():
         attractiveness = {n: 1.0 for n in G_original.nodes()}
         model_meta = {"n_poi": 0}
 
-    print("Nœuds passerelles communes adjacentes...")
-    gateways = find_gateway_nodes(G_original, EXTERNAL_ZONES)
-    for name, node in gateways.items():
-        print(f"  {name} -> nœud {node}")
-
-    print("Scores OD gravitaire (internes + zones externes)...")
-    od_counts, _  = gravity_trips(
-        G_original, attractiveness, gateways,
-        n_internal=2000, n_external=2000, seed=42,
-    )
-    base_scores   = od_scores(G_original, od_counts)
-
     print("Véhicules (betweenness intra-type, k=300)...")
     tomtom = load_enrichment()
     if tomtom:
         print(f"  TomTom : {len(tomtom)} segments enrichis")
     base_veh, base_type_max_bc = compute_vehicles(G_original, k=300, tomtom=tomtom or None)
+    base_scores = vehicle_scores(base_veh)
 
     base_geojson = graph_to_geojson(G_original, base_scores, base_veh)
     base_stats   = compute_stats(base_geojson)
@@ -255,14 +242,12 @@ def simulate():
     try:
         G_mod = apply_signs(G_original, signs)
 
-        od_mod, _ = simulate_od_traffic(G_mod, attractiveness, n_samples=1500)
-        scores_mod = od_scores(G_mod, od_mod)
-
         tomtom = load_enrichment()
         vehicles_mod, _ = compute_vehicles(
             G_mod, base_type_max_bc=base_type_max_bc, k=150,
             tomtom=tomtom or None,
         )
+        scores_mod = vehicle_scores(vehicles_mod)
 
         geojson_mod = graph_to_geojson(G_mod, scores_mod, vehicles_mod)
 

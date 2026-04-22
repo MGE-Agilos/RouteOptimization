@@ -309,20 +309,24 @@ function simulateLocally() {
     const closedIds = new Set(state.signs.map(s => s.edge_id));
     const allEdgeIds = state.baseGeoJSON.features.map(f => f.properties.edge_id);
 
-    // Union-Find sur les arêtes non-fermées
-    const parent = {};
-    allEdgeIds.forEach(eid => { if (!closedIds.has(eid)) parent[eid] = eid; });
+    // Union-Find itératif sur les arêtes non-fermées
+    const parent = {}, rank = {};
+    allEdgeIds.forEach(eid => { if (!closedIds.has(eid)) { parent[eid] = eid; rank[eid] = 0; } });
     function find(x) {
-      if (parent[x] !== x) parent[x] = find(parent[x]);
-      return parent[x];
+      while (parent[x] !== x) { parent[x] = parent[parent[x]]; x = parent[x]; }
+      return x;
+    }
+    function union(a, b) {
+      const pa = find(a), pb = find(b);
+      if (pa === pb) return;
+      if ((rank[pa] || 0) < (rank[pb] || 0)) { parent[pa] = pb; }
+      else if ((rank[pa] || 0) > (rank[pb] || 0)) { parent[pb] = pa; }
+      else { parent[pb] = pa; rank[pa] = (rank[pa] || 0) + 1; }
     }
     allEdgeIds.forEach(eid => {
       if (closedIds.has(eid)) return;
       (state.adjacency[eid] || []).forEach(nid => {
-        if (!closedIds.has(nid) && parent[nid] !== undefined) {
-          const px = find(eid), py = find(nid);
-          if (px !== py) parent[px] = py;
-        }
+        if (!closedIds.has(nid) && parent[nid] !== undefined) union(eid, nid);
       });
     });
 

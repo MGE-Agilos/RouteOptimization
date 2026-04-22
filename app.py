@@ -21,6 +21,7 @@ from traffic_model import (
     compute_vehicles,
 )
 from tomtom_enricher import load_enrichment
+from gravity_model import find_gateway_nodes, gravity_trips, EXTERNAL_ZONES
 
 warnings.filterwarnings("ignore")
 
@@ -37,6 +38,7 @@ model_meta       = {}
 base_type_max_bc = None
 base_geojson     = None
 base_stats       = None
+gateways         = None   # {zone_name: node_id} nœuds passerelles communes voisines
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -151,7 +153,7 @@ def apply_signs(G_base, signs):
 
 def _startup():
     global G_original, attractiveness, model_meta
-    global base_type_max_bc, base_geojson, base_stats
+    global base_type_max_bc, base_geojson, base_stats, gateways
 
     import osmnx as ox
 
@@ -165,9 +167,11 @@ def _startup():
         base_type_max_bc = cache["base_type_max_bc"]
         base_geojson     = cache["base_geojson"]
         base_stats       = cache["base_stats"]
+        gateways         = cache.get("gateways", {})
         print(f"  Cache chargé : {G_original.number_of_nodes()} nœuds · "
               f"{G_original.number_of_edges()} arêtes · "
-              f"{model_meta.get('n_poi', 0)} POI")
+              f"{model_meta.get('n_poi', 0)} POI · "
+              f"{len(gateways)} zones externes")
         return
 
     print(f"Chargement OSM : {CITY}...")
@@ -180,8 +184,16 @@ def _startup():
         attractiveness = {n: 1.0 for n in G_original.nodes()}
         model_meta = {"n_poi": 0}
 
-    print("Scores OD (simulation)...")
-    od_counts, _  = simulate_od_traffic(G_original, attractiveness, n_samples=3000)
+    print("Nœuds passerelles communes adjacentes...")
+    gateways = find_gateway_nodes(G_original, EXTERNAL_ZONES)
+    for name, node in gateways.items():
+        print(f"  {name} -> nœud {node}")
+
+    print("Scores OD gravitaire (internes + zones externes)...")
+    od_counts, _  = gravity_trips(
+        G_original, attractiveness, gateways,
+        n_internal=2000, n_external=2000, seed=42,
+    )
     base_scores   = od_scores(G_original, od_counts)
 
     print("Véhicules (betweenness intra-type, k=300)...")
@@ -206,6 +218,7 @@ def _startup():
             "base_type_max_bc": base_type_max_bc,
             "base_geojson":     base_geojson,
             "base_stats":       base_stats,
+            "gateways":         gateways,
         }, f, protocol=4)
     print(f"  Cache sauvegarde -> {CACHE_PKL}")
 
